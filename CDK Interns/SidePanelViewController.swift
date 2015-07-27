@@ -18,11 +18,11 @@ class SidePanelViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   var delegate: SidePanelViewControllerDelegate?
 
-  var items: [String] = ["Item1", "Item2"]
+  var items: [String] = ["Home", "Profile", "Contacts", "Calendar", "Discussion Board", "Settings"]
   
   struct TableView {
     struct CellIdentifiers {
-      static let AnimalCell = "AnimalCell"
+      static let ItemCell = "ItemCell"
     }
   }
   
@@ -47,8 +47,8 @@ extension SidePanelViewController: UITableViewDataSource {
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier(TableView.CellIdentifiers.AnimalCell, forIndexPath: indexPath) as! AnimalCell
-    cell.configureForAnimal(items[indexPath.row])
+    let cell = tableView.dequeueReusableCellWithIdentifier(TableView.CellIdentifiers.ItemCell, forIndexPath: indexPath) as! ItemCell
+    cell.configureForItem(items[indexPath.row])
     return cell
   }
   
@@ -65,16 +65,19 @@ extension SidePanelViewController: UITableViewDelegate {
   
 }
 
-class AnimalCell: UITableViewCell {
+
+
+
+class ItemCell: UITableViewCell {
   
-  @IBOutlet weak var animalImageView: UIImageView!
-  @IBOutlet weak var imageNameLabel: UILabel!
-  @IBOutlet weak var imageCreatorLabel: UILabel!
-  
-  func configureForAnimal(item: String) {
-    animalImageView.image = nil
-    imageNameLabel.text = item
-    imageCreatorLabel.text = ""
+    @IBOutlet weak var itemNameLabel: UILabel!
+
+    @IBOutlet weak var itemCreatorLabel: UILabel!
+    
+    func configureForItem(item: String) {
+    itemNameLabel.text = item
+    itemCreatorLabel.text = ""
   }
+
   
 }
