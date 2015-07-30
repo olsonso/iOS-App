@@ -15,7 +15,7 @@ enum SlideOutState {
   case RightPanelExpanded
 }
 
-class ContainerViewController: UIViewController {
+class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, UIGestureRecognizerDelegate {
   
   var centerNavigationController: UINavigationController!
   var centerViewController: CenterViewController!
@@ -26,7 +26,7 @@ class ContainerViewController: UIViewController {
       showShadowForCenterViewController(shouldShowShadow)
     }
   }
-  
+    
   var leftViewController: SidePanelViewController?
   var rightViewController: SidePanelViewController?
 
@@ -49,10 +49,25 @@ class ContainerViewController: UIViewController {
     let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "handlePanGesture:")
     centerNavigationController.view.addGestureRecognizer(panGestureRecognizer)
   }
-  
 }
 
+
+
+extension ContainerViewController: SidePanelViewControllerDelegate {
+        func itemSelected(item: MenuItem) {
+            let vc = item.viewController()
+            
+            //TODO:
+            //add nav bar button rather than "menu"
+            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .Plain, target: self, action: "toggleLeftPanel")
+            self.centerNavigationController.viewControllers = [vc]
+            self.collapseSidePanels()
+        }
+}
+
+    
 // MARK: CenterViewController delegate
+
 
 extension ContainerViewController: CenterViewControllerDelegate {
 
@@ -97,7 +112,7 @@ extension ContainerViewController: CenterViewControllerDelegate {
   }
   
   func addChildSidePanelController(sidePanelController: SidePanelViewController) {
-    sidePanelController.delegate = centerViewController
+    sidePanelController.delegate = self
     
     view.insertSubview(sidePanelController.view, atIndex: 0)
     
@@ -160,6 +175,9 @@ extension ContainerViewController: CenterViewControllerDelegate {
   
 }
 
+
+    
+    
 extension ContainerViewController: UIGestureRecognizerDelegate {
   // MARK: Gesture recognizer
   
@@ -194,8 +212,10 @@ extension ContainerViewController: UIGestureRecognizerDelegate {
     }
   }
 }
+    
+    
 
-private extension UIStoryboard {
+ extension UIStoryboard {
   class func mainStoryboard() -> UIStoryboard { return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()) }
   
   class func leftViewController() -> SidePanelViewController? {
@@ -210,4 +230,4 @@ private extension UIStoryboard {
     return mainStoryboard().instantiateViewControllerWithIdentifier("CenterViewController") as? CenterViewController
   }
   
-}
+        }

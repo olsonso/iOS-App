@@ -8,10 +8,35 @@
 
 import UIKit
 
-@objc
+
 protocol SidePanelViewControllerDelegate {
-    func itemSelected (item : String)
+   // func itemSelected (item : String)
+    func itemSelected(item: MenuItem)
 }
+
+enum MenuItem: Int {
+    case Home
+    case Animals
+    case Settings
+    
+    func viewController() -> UIViewController {
+        switch (self) {
+        case Home: return {
+            //let vc = UIViewController();
+            let vc = ContactsViewController()
+            vc.view.backgroundColor = UIColor.greenColor();
+            return vc
+            }()
+        case Animals: return UIStoryboard.centerViewController()!
+        case Settings: return {
+            let vc = UIViewController();
+            vc.view.backgroundColor = UIColor.orangeColor();
+            return vc
+            }()
+        }
+    }
+}
+
 
 class SidePanelViewController: UIViewController {
   
@@ -42,9 +67,11 @@ extension SidePanelViewController: UITableViewDataSource {
     return 1
   }
   
+    /*
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return items.count
   }
+*/
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(TableView.CellIdentifiers.ItemCell, forIndexPath: indexPath) as! ItemCell
@@ -57,14 +84,17 @@ extension SidePanelViewController: UITableViewDataSource {
 // Mark: Table View Delegate
 
 extension SidePanelViewController: UITableViewDelegate {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
 
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let selectedItem = items[indexPath.row]
-    delegate?.itemSelected(selectedItem)
+    delegate?.itemSelected(MenuItem(rawValue: indexPath.row)!)
   }
   
 }
-
 
 
 

@@ -316,7 +316,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="82e-O8-Wfl"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="82e-O8-Wfl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMW-wk-AVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
