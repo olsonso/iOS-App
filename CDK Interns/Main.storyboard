@@ -279,7 +279,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="231" y="1088"/>
+            <point key="canvasLocation" x="113" y="1118"/>
         </scene>
         <!--Contacts View Controller-->
         <scene sceneID="RvI-FI-xub">
@@ -466,6 +466,111 @@
             <point key="canvasLocation" x="369" y="1863"/>
         </scene>
         <!--Navigation Controller-->
+        <scene sceneID="LHh-PB-Oig">
+            <objects>
+                <navigationController id="zWH-cI-Yv8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7hX-ke-mwA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rdI-7S-npP" kind="relationship" relationship="rootViewController" id="9xb-AP-SHD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axi-yq-X5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-835" y="2519"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="FBa-DQ-qYc">
+            <objects>
+                <viewController storyboardIdentifier="CalendarViewController" id="rdI-7S-npP" customClass="CalendarViewController" customModule="CDK_Interns" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qk6-ew-OHn"/>
+                        <viewControllerLayoutGuide type="bottom" id="oU6-Zc-LMN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NhS-S8-kIT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT ARE THOOOOOSE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1r-0J-RnI">
+                                <rect key="frame" x="201" y="289" width="199" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F1r-0J-RnI" firstAttribute="centerX" secondItem="NhS-S8-kIT" secondAttribute="centerX" id="MeC-Ve-ghc"/>
+                            <constraint firstItem="F1r-0J-RnI" firstAttribute="top" secondItem="Qk6-ew-OHn" secondAttribute="bottom" constant="225" id="U1l-0g-M2K"/>
+                            <constraint firstItem="oU6-Zc-LMN" firstAttribute="top" secondItem="F1r-0J-RnI" secondAttribute="bottom" constant="290" id="d1Y-LR-mmn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calendar" id="z5h-lO-LOR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahe-JK-Faa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="2519"/>
+        </scene>
+        <!--Discussion Board-->
+        <scene sceneID="aAg-s1-A8v">
+            <objects>
+                <viewController storyboardIdentifier="DiscussionViewController" id="Gv4-YD-1yb" customClass="DiscussionViewController" customModule="CDK_Interns" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j3w-rG-zYN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wx9-vZ-Y2c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="exf-J5-bXA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="me, shoving breadsticks into my purse:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wg-ru-AlY">
+                                <rect key="frame" x="150" y="289" width="301" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;sorry i have to go home right now immediately&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Huy-z8-AFU">
+                                <rect key="frame" x="116" y="318" width="369" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Wg-ru-AlY" firstAttribute="centerX" secondItem="exf-J5-bXA" secondAttribute="centerX" id="AHY-nb-htz"/>
+                            <constraint firstItem="Wx9-vZ-Y2c" firstAttribute="top" secondItem="Huy-z8-AFU" secondAttribute="bottom" constant="261" id="LUg-Mo-eqh"/>
+                            <constraint firstItem="Wx9-vZ-Y2c" firstAttribute="top" secondItem="3Wg-ru-AlY" secondAttribute="bottom" constant="290" id="OtV-Fm-kvO"/>
+                            <constraint firstItem="Huy-z8-AFU" firstAttribute="top" secondItem="3Wg-ru-AlY" secondAttribute="bottom" constant="8" symbolic="YES" id="aPW-Zu-P4K"/>
+                            <constraint firstItem="Huy-z8-AFU" firstAttribute="centerX" secondItem="3Wg-ru-AlY" secondAttribute="centerX" id="iNE-9n-BpB"/>
+                            <constraint firstItem="3Wg-ru-AlY" firstAttribute="top" secondItem="j3w-rG-zYN" secondAttribute="bottom" constant="225" id="rZw-o3-kdS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Discussion Board" id="e8Q-tK-7ft"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Gx-to-YAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="3204"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kA3-yk-pF4">
+            <objects>
+                <navigationController id="oVh-N3-Ny2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I4i-iy-rOw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gv4-YD-1yb" kind="relationship" relationship="rootViewController" id="Bn6-3h-pLv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ats-vw-K6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-829" y="3210"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="Qou-jW-u9b">
             <objects>
                 <navigationController id="qpt-So-oIK" sceneMemberID="viewController">
@@ -557,7 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iK5-TU-jSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1807" y="339"/>
+            <point key="canvasLocation" x="1801" y="339"/>
         </scene>
         <!--Add View Controller-->
         <scene sceneID="PFq-yo-GTT">

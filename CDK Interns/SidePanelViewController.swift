@@ -16,21 +16,37 @@ protocol SidePanelViewControllerDelegate {
 
 enum MenuItem: Int {
     case Home
-    case Animals
+    case Profile
+    case Calendar
+    case Discussion
+    case Contacts
+    case FAQ
     case Settings
     
     func viewController() -> UIViewController {
         switch (self) {
-        case Home: return {
+        case Home: return UIStoryboard.centerViewController()!
+        case Profile: return {
             //let vc = UIViewController();
             let vc = ContactsViewController()
+            vc.view.backgroundColor = UIColor.redColor();
+            return vc
+            }()
+        case Calendar: return UIStoryboard.calendarViewController()!
+        case Discussion: return UIStoryboard.discussionViewController()!
+        case Contacts: return {
+            let vc = UIViewController();
             vc.view.backgroundColor = UIColor.greenColor();
             return vc
             }()
-        case Animals: return UIStoryboard.centerViewController()!
+        case FAQ: return {
+            let vc = UIViewController();
+            vc.view.backgroundColor = UIColor.blueColor();
+            return vc
+            }()
         case Settings: return {
             let vc = UIViewController();
-            vc.view.backgroundColor = UIColor.orangeColor();
+            vc.view.backgroundColor = UIColor.purpleColor();
             return vc
             }()
         }
@@ -43,7 +59,7 @@ class SidePanelViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   var delegate: SidePanelViewControllerDelegate?
 
-  var items: [String] = ["Home", "Profile", "Contacts", "Calendar", "Discussion Board", "FAQ", "Settings"]
+  var items: [String] = ["Home", "Profile", "Calendar", "Discussion", "Contacts", "FAQ", "Settings"]
   
   struct TableView {
     struct CellIdentifiers {
@@ -86,7 +102,7 @@ extension SidePanelViewController: UITableViewDataSource {
 extension SidePanelViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 7
     }
 
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

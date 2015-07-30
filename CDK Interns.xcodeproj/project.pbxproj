@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D42E18721B6A9A5100DA2A31 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18711B6A9A5100DA2A31 /* DBViewController.swift */; };
+		D42E18741B6ACFE000DA2A31 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */; };
+		D42E18761B6ADDDB00DA2A31 /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */; };
 		D497A6C91B66DB7900653999 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D497A6C81B66DB7900653999 /* EditViewController.swift */; };
 		D49DB85A1B6820C200EC120F /* CDK_Logo_Horiz_TM_RGB_300dpi.png in Resources */ = {isa = PBXBuildFile; fileRef = D49DB8581B6820C200EC120F /* CDK_Logo_Horiz_TM_RGB_300dpi.png */; };
 		D49DB85B1B6820C200EC120F /* CDK-Global-formerly-ADP.png in Resources */ = {isa = PBXBuildFile; fileRef = D49DB8591B6820C200EC120F /* CDK-Global-formerly-ADP.png */; };
@@ -53,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		D42E18711B6A9A5100DA2A31 /* DBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
+		D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
 		D497A6C81B66DB7900653999 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		D49DB8581B6820C200EC120F /* CDK_Logo_Horiz_TM_RGB_300dpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CDK_Logo_Horiz_TM_RGB_300dpi.png; path = ../../CDK_Logo_Horiz_TM_RGB_300dpi.png; sourceTree = "<group>"; };
 		D49DB8591B6820C200EC120F /* CDK-Global-formerly-ADP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CDK-Global-formerly-ADP.png"; path = "../../CDK-Global-formerly-ADP.png"; sourceTree = "<group>"; };
@@ -156,7 +160,9 @@
 				D86143E51B571DF100965D49 /* LaunchScreen.xib */,
 				D86143B91B571A1D00965D49 /* AppDelegate.swift */,
 				D86143D91B571C6E00965D49 /* CenterViewController.swift */,
+				D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */,
 				D86143DA1B571C6E00965D49 /* ContainerViewController.swift */,
+				D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */,
 				D86143EB1B5720CB00965D49 /* ProfileViewController.swift */,
 				D4BE88611B62B6240040E584 /* LoginViewController.swift */,
 				D86143DB1B571C6E00965D49 /* SidePanelViewController.swift */,
@@ -309,9 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42E18761B6ADDDB00DA2A31 /* DiscussionViewController.swift in Sources */,
 				D497A6C91B66DB7900653999 /* EditViewController.swift in Sources */,
 				D4BE88621B62B6240040E584 /* LoginViewController.swift in Sources */,
 				D86143EC1B5720CB00965D49 /* ProfileViewController.swift in Sources */,
+				D42E18741B6ACFE000DA2A31 /* CalendarViewController.swift in Sources */,
 				D86143DC1B571C6E00965D49 /* CenterViewController.swift in Sources */,
 				D86143BC1B571A1D00965D49 /* ViewController.swift in Sources */,
 				D4A060121B6945E8000FEE2B /* ContactsViewController.swift in Sources */,

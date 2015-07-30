@@ -15,10 +15,12 @@ enum SlideOutState {
   case RightPanelExpanded
 }
 
-class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, UIGestureRecognizerDelegate {
+class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, CalendarViewControllerDelegate, DiscussionViewControllerDelegate, UIGestureRecognizerDelegate {
   
   var centerNavigationController: UINavigationController!
   var centerViewController: CenterViewController!
+  var calendarViewController: CalendarViewController!
+  var discussionViewController: DiscussionViewController!
   
   var currentState: SlideOutState = .BothCollapsed {
     didSet {
@@ -38,6 +40,12 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, S
     centerViewController = UIStoryboard.centerViewController()
     centerViewController.delegate = self
     
+    calendarViewController = UIStoryboard.calendarViewController()
+    calendarViewController.delegate = self
+    
+    discussionViewController = UIStoryboard.discussionViewController()
+    discussionViewController.delegate = self
+    
     // wrap the centerViewController in a navigation controller, so we can push views to it
     // and display bar button items in the navigation bar
     centerNavigationController = UINavigationController(rootViewController: centerViewController)
@@ -48,6 +56,7 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, S
     
     let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "handlePanGesture:")
     centerNavigationController.view.addGestureRecognizer(panGestureRecognizer)
+    
   }
 }
 
@@ -229,5 +238,12 @@ extension ContainerViewController: UIGestureRecognizerDelegate {
   class func centerViewController() -> CenterViewController? {
     return mainStoryboard().instantiateViewControllerWithIdentifier("CenterViewController") as? CenterViewController
   }
+    
+  class func calendarViewController() -> CalendarViewController? {
+    return mainStoryboard().instantiateViewControllerWithIdentifier("CalendarViewController") as? CalendarViewController
+  }
+  class func discussionViewController() -> DiscussionViewController? {
+    return mainStoryboard().instantiateViewControllerWithIdentifier("DiscussionViewController") as? DiscussionViewController
+  }
   
-        }
+    }
