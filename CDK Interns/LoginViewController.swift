@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Parse
 
 class LoginViewController : UIViewController {
     
@@ -20,8 +21,14 @@ class LoginViewController : UIViewController {
     
     var loginViewController: LoginViewController!
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var object = PFObject(className: "Login")
+        object.addObject("Sonja", forKey: "username")
+        object.addObject("password", forKey: "password")
+        object.saveInBackground()
     //    addSubview(LoginViewController)
         
 }

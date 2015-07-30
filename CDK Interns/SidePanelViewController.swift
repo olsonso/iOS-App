@@ -18,7 +18,7 @@ class SidePanelViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   var delegate: SidePanelViewControllerDelegate?
 
-  var items: [String] = ["Home", "Profile", "Contacts", "Calendar", "Discussion Board", "Settings"]
+  var items: [String] = ["Home", "Profile", "Contacts", "Calendar", "Discussion Board", "FAQ", "Settings"]
   
   struct TableView {
     struct CellIdentifiers {
@@ -59,8 +59,8 @@ extension SidePanelViewController: UITableViewDataSource {
 extension SidePanelViewController: UITableViewDelegate {
 
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let selectedAnimal = items[indexPath.row]
-    delegate?.itemSelected(selectedAnimal)
+    let selectedItem = items[indexPath.row]
+    delegate?.itemSelected(selectedItem)
   }
   
 }
@@ -72,11 +72,9 @@ class ItemCell: UITableViewCell {
   
     @IBOutlet weak var itemNameLabel: UILabel!
 
-    @IBOutlet weak var itemCreatorLabel: UILabel!
-    
     func configureForItem(item: String) {
     itemNameLabel.text = item
-    itemCreatorLabel.text = ""
+   
   }
 
   
