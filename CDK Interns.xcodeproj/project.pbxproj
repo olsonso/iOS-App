@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E65D9C41B6AE6E200D4388F /* Contacts2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C31B6AE6E200D4388F /* Contacts2ViewController.swift */; };
+		6E65D9C61B6AE97C00D4388F /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */; };
+		6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */; };
+		6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */; };
 		D42E18721B6A9A5100DA2A31 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18711B6A9A5100DA2A31 /* DBViewController.swift */; };
 		D42E18741B6ACFE000DA2A31 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */; };
 		D42E18761B6ADDDB00DA2A31 /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */; };
 		D497A6C91B66DB7900653999 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D497A6C81B66DB7900653999 /* EditViewController.swift */; };
-		D49DB85A1B6820C200EC120F /* CDK_Logo_Horiz_TM_RGB_300dpi.png in Resources */ = {isa = PBXBuildFile; fileRef = D49DB8581B6820C200EC120F /* CDK_Logo_Horiz_TM_RGB_300dpi.png */; };
-		D49DB85B1B6820C200EC120F /* CDK-Global-formerly-ADP.png in Resources */ = {isa = PBXBuildFile; fileRef = D49DB8591B6820C200EC120F /* CDK-Global-formerly-ADP.png */; };
-		D49DB85E1B682F4F00EC120F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49DB85C1B682F4F00EC120F /* Bolts.framework */; };
-		D49DB85F1B682F5000EC120F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49DB85D1B682F4F00EC120F /* Parse.framework */; };
 		D49DB8611B68305D00EC120F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49DB8601B68305D00EC120F /* AudioToolbox.framework */; };
 		D49DB8631B68306400EC120F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49DB8621B68306400EC120F /* CFNetwork.framework */; };
 		D49DB8661B68308400EC120F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49DB8641B68308400EC120F /* CoreGraphics.framework */; };
@@ -54,14 +54,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E65D9C31B6AE6E200D4388F /* Contacts2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts2ViewController.swift; sourceTree = "<group>"; };
+		6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg; sourceTree = "<group>"; };
 		D42E18711B6A9A5100DA2A31 /* DBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
 		D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
 		D497A6C81B66DB7900653999 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
-		D49DB8581B6820C200EC120F /* CDK_Logo_Horiz_TM_RGB_300dpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CDK_Logo_Horiz_TM_RGB_300dpi.png; path = ../../CDK_Logo_Horiz_TM_RGB_300dpi.png; sourceTree = "<group>"; };
-		D49DB8591B6820C200EC120F /* CDK-Global-formerly-ADP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CDK-Global-formerly-ADP.png"; path = "../../CDK-Global-formerly-ADP.png"; sourceTree = "<group>"; };
-		D49DB85C1B682F4F00EC120F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
-		D49DB85D1B682F4F00EC120F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
 		D49DB8601B68305D00EC120F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D49DB8621B68306400EC120F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D49DB8641B68308400EC120F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,8 +109,6 @@
 				D49DB8671B68308400EC120F /* Security.framework in Frameworks */,
 				D49DB8631B68306400EC120F /* CFNetwork.framework in Frameworks */,
 				D49DB8611B68305D00EC120F /* AudioToolbox.framework in Frameworks */,
-				D49DB85F1B682F5000EC120F /* Parse.framework in Frameworks */,
-				D49DB85E1B682F4F00EC120F /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,13 +157,16 @@
 				D86143E71B571E1500965D49 /* Main.storyboard */,
 				D86143E51B571DF100965D49 /* LaunchScreen.xib */,
 				D86143B91B571A1D00965D49 /* AppDelegate.swift */,
-				D86143D91B571C6E00965D49 /* CenterViewController.swift */,
-				D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */,
-				D86143DA1B571C6E00965D49 /* ContainerViewController.swift */,
-				D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */,
-				D86143EB1B5720CB00965D49 /* ProfileViewController.swift */,
 				D4BE88611B62B6240040E584 /* LoginViewController.swift */,
+				D86143D91B571C6E00965D49 /* CenterViewController.swift */,
+				D86143DA1B571C6E00965D49 /* ContainerViewController.swift */,
 				D86143DB1B571C6E00965D49 /* SidePanelViewController.swift */,
+				D86143EB1B5720CB00965D49 /* ProfileViewController.swift */,
+				D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */,
+				D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */,
+				6E65D9C31B6AE6E200D4388F /* Contacts2ViewController.swift */,
+				6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */,
+				6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */,
 				D497A6C81B66DB7900653999 /* EditViewController.swift */,
 				D86143BB1B571A1D00965D49 /* ViewController.swift */,
 				D42E18711B6A9A5100DA2A31 /* DBViewController.swift */,
@@ -179,10 +180,7 @@
 		D86143B71B571A1D00965D49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D49DB85C1B682F4F00EC120F /* Bolts.framework */,
-				D49DB85D1B682F4F00EC120F /* Parse.framework */,
-				D49DB8581B6820C200EC120F /* CDK_Logo_Horiz_TM_RGB_300dpi.png */,
-				D49DB8591B6820C200EC120F /* CDK-Global-formerly-ADP.png */,
+				6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */,
 				D86143E91B571E8500965D49 /* CDK_Logo_TM_RGB_MinSize.png */,
 				D86143E11B571CC600965D49 /* reveal-icon.png */,
 				D86143E21B571CC600965D49 /* reveal-icon@2x.png */,
@@ -289,12 +287,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49DB85B1B6820C200EC120F /* CDK-Global-formerly-ADP.png in Resources */,
 				D86143E61B571DF100965D49 /* LaunchScreen.xib in Resources */,
 				D86143E41B571CC600965D49 /* reveal-icon@2x.png in Resources */,
-				D49DB85A1B6820C200EC120F /* CDK_Logo_Horiz_TM_RGB_300dpi.png in Resources */,
 				D86143C41B571A1D00965D49 /* LaunchScreen.xib in Resources */,
 				D86143E81B571E1500965D49 /* Main.storyboard in Resources */,
+				6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */,
 				D86143C11B571A1D00965D49 /* Images.xcassets in Resources */,
 				D86143EA1B571E8500965D49 /* CDK_Logo_TM_RGB_MinSize.png in Resources */,
 				D86143E31B571CC600965D49 /* reveal-icon.png in Resources */,
@@ -323,8 +320,11 @@
 				D86143DC1B571C6E00965D49 /* CenterViewController.swift in Sources */,
 				D86143BC1B571A1D00965D49 /* ViewController.swift in Sources */,
 				D4A060121B6945E8000FEE2B /* ContactsViewController.swift in Sources */,
+				6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */,
 				D86143DE1B571C6E00965D49 /* SidePanelViewController.swift in Sources */,
 				D86143DD1B571C6E00965D49 /* ContainerViewController.swift in Sources */,
+				6E65D9C41B6AE6E200D4388F /* Contacts2ViewController.swift in Sources */,
+				6E65D9C61B6AE97C00D4388F /* FAQViewController.swift in Sources */,
 				D42E18721B6A9A5100DA2A31 /* DBViewController.swift in Sources */,
 				D86143BA1B571A1D00965D49 /* AppDelegate.swift in Sources */,
 			);
