@@ -15,12 +15,13 @@ enum SlideOutState {
   case RightPanelExpanded
 }
 
-class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, CalendarViewControllerDelegate, DiscussionViewControllerDelegate, UIGestureRecognizerDelegate {
+class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, CalendarViewControllerDelegate, DiscussionViewControllerDelegate, ProfileViewControllerDelegate, UIGestureRecognizerDelegate {
   
   var centerNavigationController: UINavigationController!
   var centerViewController: CenterViewController!
   var calendarViewController: CalendarViewController!
   var discussionViewController: DiscussionViewController!
+  var profileViewController: ProfileViewController!
   
   var currentState: SlideOutState = .BothCollapsed {
     didSet {
@@ -45,6 +46,10 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, S
     
     discussionViewController = UIStoryboard.discussionViewController()
     discussionViewController.delegate = self
+    
+   profileViewController = UIStoryboard.profileViewController()
+   profileViewController.delegate = self
+    
     
     // wrap the centerViewController in a navigation controller, so we can push views to it
     // and display bar button items in the navigation bar
@@ -246,4 +251,8 @@ extension ContainerViewController: UIGestureRecognizerDelegate {
     return mainStoryboard().instantiateViewControllerWithIdentifier("DiscussionViewController") as? DiscussionViewController
   }
   
+  class func profileViewController() -> ProfileViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("ProfileViewController") as? ProfileViewController
+    
     }
+}

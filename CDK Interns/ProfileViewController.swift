@@ -10,16 +10,46 @@ import Foundation
 import UIKit
 
 @objc
-protocol ProfileViewControllerDelegate {
+protocol ProfileViewControllerDelegate{
     optional func toggleLeftPanel()
     optional func toggleRightPanel()
     optional func collapseSidePanels()
 }
 
-class ProfileViewController : UIViewController {
-    var delegate: ProfileViewControllerDelegate?
 
-    @IBOutlet weak var label: UILabel!
+class ProfileViewController: UIViewController {
+    
+    @IBOutlet weak var mainContainer: UIView!
+    
+    var delegate: ProfileViewControllerDelegate?
+    var currentVC : UIViewController?
+    
+    
+    // MARK: Button actions
+    
+    @IBAction func kittiesTapped(sender: AnyObject) {
+        delegate?.toggleLeftPanel?()
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if let profileVC = segue.destinationViewController as? ProfileViewController{
+            currentVC = profileVC
+        }
+        
+        if let contactVC = segue.destinationViewController as? ContactsViewController{
+            currentVC = contactVC
+        }
+    }
+    
+    
     
 }
 
+extension ProfileViewController{
+    func ProfileitemSelected (item: String) {
+        delegate?.collapseSidePanels?()
+    }
+    
+}
