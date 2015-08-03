@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Parse
 
 class LoginViewController : UIViewController {
     
@@ -20,22 +19,12 @@ class LoginViewController : UIViewController {
     @IBOutlet weak var signupButton: UIButton!
     
     var loginViewController: LoginViewController!
-    
-   
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        var object = PFObject(className: "Login")
-        object.addObject("Sonja", forKey: "username")
-        object.addObject("password", forKey: "password")
-        object.saveInBackground()
-    //    addSubview(LoginViewController)
+
         
 }
-    @IBAction func loginTouch(sender: AnyObject) {
+     func loginTouch(sender: AnyObject) {
         
         
         let containerViewController = ContainerViewController()
         presentViewController(containerViewController, animated: true, completion: nil)
     }
-}
