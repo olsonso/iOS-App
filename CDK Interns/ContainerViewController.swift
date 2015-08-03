@@ -15,12 +15,15 @@ enum SlideOutState {
   case RightPanelExpanded
 }
 
-class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, CalendarViewControllerDelegate, DiscussionViewControllerDelegate, ProfileViewControllerDelegate, UIGestureRecognizerDelegate {
+class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, CalendarViewControllerDelegate, DiscussionViewControllerDelegate, Contacts2ViewControllerDelegate, FAQViewControllerDelegate, SettingsViewControllerDelegate, ProfileViewControllerDelegate, UIGestureRecognizerDelegate {
   
   var centerNavigationController: UINavigationController!
   var centerViewController: CenterViewController!
   var calendarViewController: CalendarViewController!
   var discussionViewController: DiscussionViewController!
+  var contacts2ViewController: Contacts2ViewController!
+  var faqViewController: FAQViewController!
+  var settingsViewController: SettingsViewController!
   var profileViewController: ProfileViewController!
   
   var currentState: SlideOutState = .BothCollapsed {
@@ -47,9 +50,17 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, S
     discussionViewController = UIStoryboard.discussionViewController()
     discussionViewController.delegate = self
     
-   profileViewController = UIStoryboard.profileViewController()
-   profileViewController.delegate = self
+    contacts2ViewController = UIStoryboard.contacts2ViewController()
+    contacts2ViewController.delegate = self
     
+    faqViewController = UIStoryboard.faqViewController()
+    faqViewController.delegate = self
+    
+    settingsViewController = UIStoryboard.settingsViewController()
+    settingsViewController.delegate = self
+    
+    profileViewController = UIStoryboard.profileViewController()
+    profileViewController.delegate = self
     
     // wrap the centerViewController in a navigation controller, so we can push views to it
     // and display bar button items in the navigation bar
@@ -250,9 +261,17 @@ extension ContainerViewController: UIGestureRecognizerDelegate {
   class func discussionViewController() -> DiscussionViewController? {
     return mainStoryboard().instantiateViewControllerWithIdentifier("DiscussionViewController") as? DiscussionViewController
   }
-  
+  class func contacts2ViewController() -> Contacts2ViewController? {
+    return mainStoryboard().instantiateViewControllerWithIdentifier("Contacts2ViewController") as? Contacts2ViewController
+  }
+  class func faqViewController() -> FAQViewController? {
+    return mainStoryboard().instantiateViewControllerWithIdentifier("FAQViewController") as? FAQViewController
+  }
+  class func settingsViewController() -> SettingsViewController? {
+    return mainStoryboard().instantiateViewControllerWithIdentifier("SettingsViewController") as? SettingsViewController
+  }
   class func profileViewController() -> ProfileViewController? {
-        return mainStoryboard().instantiateViewControllerWithIdentifier("ProfileViewController") as? ProfileViewController
-    
+    return mainStoryboard().instantiateViewControllerWithIdentifier("ProfileViewController") as? ProfileViewController
     }
-}
+  
+    }

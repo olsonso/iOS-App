@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import Parse
+
 
 class EditViewController: UIViewController {
     
@@ -23,12 +23,8 @@ class EditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
-        }
-        
+    
+    
         // load user current info and picture
     }
     
