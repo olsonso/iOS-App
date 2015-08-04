@@ -43,9 +43,24 @@ class Contacts2ViewController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
+            let json = JSON(data: data)
+            println(json)
+            if let authorName = json["authors"][0]["first_name"].string {
+                println("Author: \(authorName)")
+            }
+            else{
+                println("parse fail")
+            }
+        }
+    }
+    
     
     
 }
+
 
 extension Contacts2ViewController{
     func Contacts2itemSelected (item: String) {
