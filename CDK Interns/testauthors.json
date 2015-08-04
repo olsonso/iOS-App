@@ -1,27 +1,24 @@
 {
-	“authors” : [ 
+	"authors" : [
 	{
-		“id” : 0,
-		“first_name” : ”Magic”,
-		“last_name” : “Unicorn”,
-		“email” : “magic.unicorn@cdk.com”,
-		“position” : “Mascot”, 
-		“img” :
+		"id" : 0,
+		"first_name" : "Magic",
+		"last_name" : "Unicorn",
+		"email" : "magic.unicorn@cdk.com",
+		"position" : "Mascot"
 	},
 	{
-		“id” : 1,
-		“first_name” : “Cute”,
-		“last_name” : “Kitten”,
-		“email” : “cute.kitten@cdk.com”,
-		“position” : “Internet Meme”, 
-		“img” : 
+		"id" : 1,
+		"first_name" : "Cute",
+		"last_name" : "Kitten",
+		"email" : "cute.kitten@cdk.com",
+		"position" : "Internet Meme"
 	},
 	{
-		“id” : 2,
-		“first_name” : “Rock”,
-		“last_name” : “Star”,
-		“email” : “super.star@cdk.com”,
-		“position” : “Ninja Coder”,
-		“img” :
+		"id" : 2,
+		"first_name" : "Rock",
+		"last_name" : "Star",
+		"email" : "super.star@cdk.com",
+		"position" : "Ninja Coder"
 	}]
 }	
