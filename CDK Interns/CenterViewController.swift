@@ -37,9 +37,6 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
        currentVC = profileVC
        }
         
-        if let contactVC = segue.destinationViewController as? ContactsViewController{
-        currentVC = contactVC
-        }
     }
 
 
