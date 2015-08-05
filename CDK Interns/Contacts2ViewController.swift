@@ -24,7 +24,8 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
     
     var delegate: Contacts2ViewControllerDelegate?
     var currentVC : UIViewController?
-    let dataSourceArray = ["Ariel", "Belle", "Cinderella", "Donald Duck", "Dory", "Figaro", "Genie", "Goofy", "Jasmine", "Jagar", "Lightning McQueen", "Mickey Mouse", "Mike", "Minnie Mouse", "Mulan", "Pocahontas", "Pluto", "Rafiki", "Rapunzel", "Sharkbait", "Snow White",  "Sulley", "Tiana", "WALL-E"]
+    //let keyArray = interns.keys
+    //let dataSourceArray = ["Ariel", "Belle", "Cinderella", "Donald Duck", "Dory", "Figaro", "Genie", "Goofy", "Jasmine", "Jagar", "Lightning McQueen", "Mickey Mouse", "Mike", "Minnie Mouse", "Mulan", "Pocahontas", "Pluto", "Rafiki", "Rapunzel", "Sharkbait", "Snow White",  "Sulley", "Tiana", "WALL-E"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,14 +36,21 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSourceArray.count
+        print("Count: \(interns.count)")
+        /*for intern in interns.values {
+            println("Name: \(intern.first_name)")
+        }*/
+        return interns.count
         // Most of the time my data source is an array of something...  will replace with the actual name of the data source
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // Note:  Be sure to replace the argument to dequeueReusableCellWithIdentifier with the actual identifier string!
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
-        cell.textLabel?.text = dataSourceArray[indexPath.row]
+        //cell.textLabel?.text = "hi"
+        //cell.textLabel?.text = dataSourceArray[indexPath.row]
+        var intern = interns[indexPath.row]
+        cell.textLabel?.text = intern!.first_name
         
         // set cell's textLabel.text property 
         // set cell's detailTextLabel.text property
@@ -52,7 +60,7 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedContacts = dataSourceArray[indexPath.row]
+        let selectedContacts = interns.values
         
     }
     

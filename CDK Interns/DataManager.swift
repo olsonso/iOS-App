@@ -9,6 +9,8 @@
 import Foundation
 
 let TopAppURL = "https://itunes.apple.com/us/rss/topgrossingipadapplications/limit=25/json"
+var interns = [Int: Intern]()
+var messages = [Int: Message]()
 
 class DataManager {
     
