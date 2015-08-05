@@ -11,7 +11,6 @@
 		6E65D9C61B6AE97C00D4388F /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */; };
 		6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */; };
 		6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */; };
-<<<<<<< HEAD
 		B17438E81B71681400C8D941 /* Group.h in Sources */ = {isa = PBXBuildFile; fileRef = B17438E71B71681400C8D941 /* Group.h */; };
 		B17438EC1B716CD600C8D941 /* MeetupCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B17438EB1B716CD600C8D941 /* MeetupCommunicator.m */; };
 		B1D6CD7A1B717314003B4BCF /* GroupBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD791B717314003B4BCF /* GroupBuilder.m */; };
@@ -20,13 +19,11 @@
 		B1D6CD871B717BA1003B4BCF /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD861B717BA1003B4BCF /* DetailCell.m */; };
 		B1D6CD891B717C25003B4BCF /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD881B717C25003B4BCF /* Group.m */; };
 		B1D6CD8C1B717C87003B4BCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD8B1B717C87003B4BCF /* AppDelegate.m */; };
-=======
 		CFAE57801B715B1700DC75A0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE577F1B715B1700DC75A0 /* DataManager.swift */; };
 		CFAE57841B71629C00DC75A0 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE57831B71629C00DC75A0 /* AppModel.swift */; };
 		D41B18171B7155620016E0BD /* testauthors.json in Resources */ = {isa = PBXBuildFile; fileRef = D41B18151B7155620016E0BD /* testauthors.json */; };
 		D41B18181B7155620016E0BD /* testevents.json in Resources */ = {isa = PBXBuildFile; fileRef = D41B18161B7155620016E0BD /* testevents.json */; };
 		D41B18201B7266220016E0BD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B18191B7155FE0016E0BD /* SwiftyJSON.swift */; };
->>>>>>> develop
 		D42E18721B6A9A5100DA2A31 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18711B6A9A5100DA2A31 /* DBViewController.swift */; };
 		D42E18741B6ACFE000DA2A31 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */; };
 		D42E18761B6ADDDB00DA2A31 /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */; };
@@ -73,7 +70,6 @@
 		6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		B17438E61B71681400C8D941 /* CDK Interns-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDK Interns-Bridging-Header.h"; sourceTree = "<group>"; };
 		B17438E71B71681400C8D941 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		B17438E91B716B6A00C8D941 /* MeetupCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetupCommunicatorDelegate.h; sourceTree = "<group>"; };
@@ -91,13 +87,11 @@
 		B1D6CD881B717C25003B4BCF /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		B1D6CD8A1B717C87003B4BCF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1D6CD8B1B717C87003B4BCF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-=======
 		CFAE577F1B715B1700DC75A0 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CFAE57831B71629C00DC75A0 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		D41B18151B7155620016E0BD /* testauthors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testauthors.json; sourceTree = "<group>"; };
 		D41B18161B7155620016E0BD /* testevents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testevents.json; sourceTree = "<group>"; };
 		D41B18191B7155FE0016E0BD /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../../../Downloads/TopApps-Final/TopApps/SwiftyJSON.swift"; sourceTree = "<group>"; };
->>>>>>> develop
 		D42E18711B6A9A5100DA2A31 /* DBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
 		D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
@@ -394,12 +388,9 @@
 				D86143DC1B571C6E00965D49 /* CenterViewController.swift in Sources */,
 				D41B18201B7266220016E0BD /* SwiftyJSON.swift in Sources */,
 				D86143BC1B571A1D00965D49 /* ViewController.swift in Sources */,
-<<<<<<< HEAD
 				D4A060121B6945E8000FEE2B /* ContactsViewController.swift in Sources */,
 				B1D6CD891B717C25003B4BCF /* Group.m in Sources */,
-=======
 				CFAE57801B715B1700DC75A0 /* DataManager.swift in Sources */,
->>>>>>> develop
 				6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */,
 				B17438EC1B716CD600C8D941 /* MeetupCommunicator.m in Sources */,
 				B1D6CD831B71796F003B4BCF /* MasterViewController.m in Sources */,
