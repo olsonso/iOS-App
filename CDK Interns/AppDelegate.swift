@@ -16,32 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        /*
-        let json = JSON(data: DataManager)
-        let json = JSON(jsonObject)
-        
-        if let dataFromString = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
-            let json = JSON(data: dataFromString)
-        }
-        
-        for (key: String, subJson: JSON) in json {
-            println(key)
-        }
-        
-        
-        var authors = [Int: String]()
-        
-        
+       
+        var interns = [Int: Intern]()
+        var messages = [Int: Message]()
+
         DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
             let json = JSON(data: data)
-            if let authorName = json["authors"][0]["first_name"].string {
-                println("Author: \(authorName)")
-            }
-            else{
-                println("parse fail")
+            if let myAuthors = json["authors"].array{
+                for a in myAuthors{
+                    println(a)
+                    var newIntern = Intern(json: a)
+                    interns[newIntern.id] = newIntern
+                }
             }
         }
-*/
+
         return true
 
     }
