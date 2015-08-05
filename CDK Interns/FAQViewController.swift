@@ -37,12 +37,7 @@ class FAQViewController: UIViewController {
         if let profileVC = segue.destinationViewController as? ProfileViewController{
             currentVC = profileVC
         }
-        
-        if let contactVC = segue.destinationViewController as? ContactsViewController{
-            currentVC = contactVC
-        }
     }
-    
     
     
 }

@@ -16,30 +16,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        /*
+        let json = JSON(data: DataManager)
+        let json = JSON(jsonObject)
         
-       
+        if let dataFromString = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+            let json = JSON(data: dataFromString)
+        }
+        
+        for (key: String, subJson: JSON) in json {
+            println(key)
+        }
         
         
-        // Override point for customization after application launch.
-/*
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-
-        let containerViewController = ContainerViewController()
-
-        window!.rootViewController = containerViewController
-        window!.makeKeyAndVisible()
-
+        var authors = [Int: String]()
+        
+        
+        DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
+            let json = JSON(data: data)
+            if let authorName = json["authors"][0]["first_name"].string {
+                println("Author: \(authorName)")
+            }
+            else{
+                println("parse fail")
+            }
+        }
+*/
         return true
-    }
 
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let containerViewController = LoginViewController()
-        
-        window!.rootViewController = containerViewController
-        window!.makeKeyAndVisible()
-*/        
-        return true
-        
     }
 
     func applicationWillResignActive(application: UIApplication) {
