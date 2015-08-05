@@ -11,6 +11,14 @@
 		6E65D9C61B6AE97C00D4388F /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */; };
 		6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */; };
 		6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */; };
+		B17438E81B71681400C8D941 /* Group.h in Sources */ = {isa = PBXBuildFile; fileRef = B17438E71B71681400C8D941 /* Group.h */; };
+		B17438EC1B716CD600C8D941 /* MeetupCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B17438EB1B716CD600C8D941 /* MeetupCommunicator.m */; };
+		B1D6CD7A1B717314003B4BCF /* GroupBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD791B717314003B4BCF /* GroupBuilder.m */; };
+		B1D6CD801B717443003B4BCF /* MeetupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD7F1B717443003B4BCF /* MeetupManager.m */; };
+		B1D6CD831B71796F003B4BCF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD821B71796F003B4BCF /* MasterViewController.m */; };
+		B1D6CD871B717BA1003B4BCF /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD861B717BA1003B4BCF /* DetailCell.m */; };
+		B1D6CD891B717C25003B4BCF /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD881B717C25003B4BCF /* Group.m */; };
+		B1D6CD8C1B717C87003B4BCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD8B1B717C87003B4BCF /* AppDelegate.m */; };
 		D42E18721B6A9A5100DA2A31 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18711B6A9A5100DA2A31 /* DBViewController.swift */; };
 		D42E18741B6ACFE000DA2A31 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */; };
 		D42E18761B6ADDDB00DA2A31 /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */; };
@@ -58,6 +66,23 @@
 		6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg; sourceTree = "<group>"; };
+		B17438E61B71681400C8D941 /* CDK Interns-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDK Interns-Bridging-Header.h"; sourceTree = "<group>"; };
+		B17438E71B71681400C8D941 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		B17438E91B716B6A00C8D941 /* MeetupCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetupCommunicatorDelegate.h; sourceTree = "<group>"; };
+		B17438EA1B716CD600C8D941 /* MeetupCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetupCommunicator.h; sourceTree = "<group>"; };
+		B17438EB1B716CD600C8D941 /* MeetupCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetupCommunicator.m; sourceTree = "<group>"; };
+		B1D6CD781B717314003B4BCF /* GroupBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupBuilder.h; sourceTree = "<group>"; };
+		B1D6CD791B717314003B4BCF /* GroupBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupBuilder.m; sourceTree = "<group>"; };
+		B1D6CD7B1B7173A3003B4BCF /* MeetupManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetupManagerDelegate.h; sourceTree = "<group>"; };
+		B1D6CD7E1B717443003B4BCF /* MeetupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetupManager.h; sourceTree = "<group>"; };
+		B1D6CD7F1B717443003B4BCF /* MeetupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetupManager.m; sourceTree = "<group>"; };
+		B1D6CD811B71796F003B4BCF /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		B1D6CD821B71796F003B4BCF /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B1D6CD851B717BA1003B4BCF /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		B1D6CD861B717BA1003B4BCF /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		B1D6CD881B717C25003B4BCF /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		B1D6CD8A1B717C87003B4BCF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1D6CD8B1B717C87003B4BCF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D42E18711B6A9A5100DA2A31 /* DBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
 		D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		D42E18751B6ADDDB00DA2A31 /* DiscussionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
@@ -122,9 +147,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1D6CD841B717AB9003B4BCF /* meetup */ = {
+			isa = PBXGroup;
+			children = (
+				B1D6CD8A1B717C87003B4BCF /* AppDelegate.h */,
+				B1D6CD8B1B717C87003B4BCF /* AppDelegate.m */,
+				B1D6CD851B717BA1003B4BCF /* DetailCell.h */,
+				B1D6CD861B717BA1003B4BCF /* DetailCell.m */,
+				B1D6CD811B71796F003B4BCF /* MasterViewController.h */,
+				B1D6CD821B71796F003B4BCF /* MasterViewController.m */,
+				B1D6CD7E1B717443003B4BCF /* MeetupManager.h */,
+				B1D6CD7F1B717443003B4BCF /* MeetupManager.m */,
+				B1D6CD7B1B7173A3003B4BCF /* MeetupManagerDelegate.h */,
+				B17438E71B71681400C8D941 /* Group.h */,
+				B1D6CD881B717C25003B4BCF /* Group.m */,
+				B17438E91B716B6A00C8D941 /* MeetupCommunicatorDelegate.h */,
+				B1D6CD781B717314003B4BCF /* GroupBuilder.h */,
+				B1D6CD791B717314003B4BCF /* GroupBuilder.m */,
+				B17438EA1B716CD600C8D941 /* MeetupCommunicator.h */,
+				B17438EB1B716CD600C8D941 /* MeetupCommunicator.m */,
+			);
+			name = meetup;
+			sourceTree = "<group>";
+		};
 		D86143AB1B571A1D00965D49 = {
 			isa = PBXGroup;
 			children = (
+				B1D6CD841B717AB9003B4BCF /* meetup */,
 				D49DB8721B6830D100EC120F /* CoreLocation.framework */,
 				D49DB8681B6830BF00EC120F /* libsqlite3.dylib */,
 				D49DB8691B6830BF00EC120F /* libz.dylib */,
@@ -138,6 +187,7 @@
 				D86143B61B571A1D00965D49 /* CDK Interns */,
 				D86143CC1B571A1D00965D49 /* CDK InternsTests */,
 				D86143B51B571A1D00965D49 /* Products */,
+				B17438E61B71681400C8D941 /* CDK Interns-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,21 +362,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D6CD8C1B717C87003B4BCF /* AppDelegate.m in Sources */,
 				D42E18761B6ADDDB00DA2A31 /* DiscussionViewController.swift in Sources */,
 				D497A6C91B66DB7900653999 /* EditViewController.swift in Sources */,
+				B1D6CD801B717443003B4BCF /* MeetupManager.m in Sources */,
 				D4BE88621B62B6240040E584 /* LoginViewController.swift in Sources */,
+				B1D6CD7A1B717314003B4BCF /* GroupBuilder.m in Sources */,
+				B1D6CD871B717BA1003B4BCF /* DetailCell.m in Sources */,
 				D86143EC1B5720CB00965D49 /* ProfileViewController.swift in Sources */,
 				D42E18741B6ACFE000DA2A31 /* CalendarViewController.swift in Sources */,
 				D86143DC1B571C6E00965D49 /* CenterViewController.swift in Sources */,
 				D86143BC1B571A1D00965D49 /* ViewController.swift in Sources */,
 				D4A060121B6945E8000FEE2B /* ContactsViewController.swift in Sources */,
+				B1D6CD891B717C25003B4BCF /* Group.m in Sources */,
 				6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */,
+				B17438EC1B716CD600C8D941 /* MeetupCommunicator.m in Sources */,
+				B1D6CD831B71796F003B4BCF /* MasterViewController.m in Sources */,
 				D86143DE1B571C6E00965D49 /* SidePanelViewController.swift in Sources */,
 				D86143DD1B571C6E00965D49 /* ContainerViewController.swift in Sources */,
 				6E65D9C41B6AE6E200D4388F /* Contacts2ViewController.swift in Sources */,
 				6E65D9C61B6AE97C00D4388F /* FAQViewController.swift in Sources */,
 				D42E18721B6A9A5100DA2A31 /* DBViewController.swift in Sources */,
 				D86143BA1B571A1D00965D49 /* AppDelegate.swift in Sources */,
+				B17438E81B71681400C8D941 /* Group.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +505,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/olsons/Downloads/parse-library-1.7.5",
@@ -455,6 +515,8 @@
 				INFOPLIST_FILE = "CDK Interns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CDK Interns-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -462,7 +524,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/olsons/Downloads/parse-library-1.7.5",
@@ -470,6 +534,7 @@
 				INFOPLIST_FILE = "CDK Interns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CDK Interns-Bridging-Header.h";
 			};
 			name = Release;
 		};

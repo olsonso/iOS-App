@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MeetupManagerDelegate : NSObject
-
+@protocol MeetupManagerDelegate
+- (void)didReceiveGroups:(NSArray *)groups;
+- (void)fetchingGroupsFailedWithError:(NSError *)error;
 @end

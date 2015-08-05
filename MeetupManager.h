@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface MeetupManager : NSObject
+#import "MeetupManagerDelegate.h"
+#import "MeetupCommunicatorDelegate.h"
 
+@class MeetupCommunicator;
+
+@interface MeetupManager : NSObject<MeetupCommunicatorDelegate>
+@property (strong, nonatomic) MeetupCommunicator *communicator;
+@property (weak, nonatomic) id<MeetupManagerDelegate> delegate;
+
+- (void)fetchGroupsAtCoordinate:(CLLocationCoordinate2D)coordinate;
 @end

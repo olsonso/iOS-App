@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 CDK Global, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface MasterViewController : NSObject
+#import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+@interface MasterViewController : UITableViewController
 
 @end

@@ -6,4 +6,8 @@
 //  Copyright (c) 2015 CDK Global, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Group.h"
+
+@implementation Group
+
+@end

@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MeetupCommunicatorDelegate <NSObject>
+@protocol MeetupCommunicatorDelegate 
+
+- (void)receivedGroupsJSON:(NSData *)objectNotation;
+- (void)fetchingGroupsFailedWithError:(NSError *)error;
 
 @end
