@@ -327,7 +327,7 @@
 				TargetAttributes = {
 					D86143B31B571A1D00965D49 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 89QT2JHU6L;
+						DevelopmentTeam = 4L4T8G873F;
 					};
 					D86143C81B571A1D00965D49 = {
 						CreatedOnToolsVersion = 6.4;
@@ -400,7 +400,6 @@
 				CFAE57941B72B19E00DC75A0 /* Message.swift in Sources */,
 				D86143DC1B571C6E00965D49 /* CenterViewController.swift in Sources */,
 				D86143BC1B571A1D00965D49 /* ViewController.swift in Sources */,
-				D4A060121B6945E8000FEE2B /* ContactsViewController.swift in Sources */,
 				B1D6CD891B717C25003B4BCF /* Group.m in Sources */,
 				CFAE57801B715B1700DC75A0 /* DataManager.swift in Sources */,
 				6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */,
@@ -464,6 +463,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -486,6 +486,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "76868518-eff8-442a-a47b-bb068b91a2fc";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,6 +510,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -524,6 +526,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "76868518-eff8-442a-a47b-bb068b91a2fc";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -544,6 +547,7 @@
 				INFOPLIST_FILE = "CDK Interns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "76868518-eff8-442a-a47b-bb068b91a2fc";
 				SWIFT_OBJC_BRIDGING_HEADER = "CDK Interns-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -563,6 +567,7 @@
 				INFOPLIST_FILE = "CDK Interns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "76868518-eff8-442a-a47b-bb068b91a2fc";
 				SWIFT_OBJC_BRIDGING_HEADER = "CDK Interns-Bridging-Header.h";
 			};
 			name = Release;
