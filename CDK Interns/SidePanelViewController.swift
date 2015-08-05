@@ -34,10 +34,11 @@ enum MenuItem: Int {
             return vc
             }()*/
         case Calendar: return UIStoryboard.calendarViewController()!
-        case Discussion: return UIStoryboard.discussionViewController()!
+       // case Discussion: return UIStoryboard.discussionViewController()!
         case Contacts: return UIStoryboard.contacts2ViewController()!
         case FAQ: return UIStoryboard.faqViewController()!
         case Settings: return UIStoryboard.settingsViewController()!
+        default: return UIStoryboard.centerViewController()!
         }
     }
 }
