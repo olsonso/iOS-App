@@ -78,10 +78,12 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, S
 extension ContainerViewController: SidePanelViewControllerDelegate {
         func itemSelected(item: MenuItem) {
             let vc = item.viewController()
-            
+            var image = UIImage(named: "reveal-icon.png")
+            image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
             //TODO:
             //add nav bar button rather than "menu"
-            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .Plain, target: self, action: "toggleLeftPanel")
+            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .Plain, target: self, action: "toggleLeftPanel")
+           //vc.navigationItem.leftBarButtonItem = UIBarButtonItem(image: "reveal-icon.png", style: nil, target: self, action: "toggleLeftPanel")
             self.centerNavigationController.viewControllers = [vc]
             self.collapseSidePanels()
         }

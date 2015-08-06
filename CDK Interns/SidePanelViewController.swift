@@ -10,7 +10,6 @@ import UIKit
 
 
 protocol SidePanelViewControllerDelegate {
-   // func itemSelected (item : String)
     func itemSelected(item: MenuItem)
 }
 
@@ -27,12 +26,6 @@ enum MenuItem: Int {
         switch (self) {
         case Home: return UIStoryboard.centerViewController()!
         case Profile: return UIStoryboard.profileViewController()!
-            /*{
-            //let vc = UIViewController();
-            let vc = ContactsViewController()
-            vc.view.backgroundColor = UIColor.redColor();
-            return vc
-            }()*/
         case Calendar: return UIStoryboard.calendarViewController()!
        // case Discussion: return UIStoryboard.discussionViewController()!
         case Contacts: return UIStoryboard.contacts2ViewController()!

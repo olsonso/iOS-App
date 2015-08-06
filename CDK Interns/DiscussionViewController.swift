@@ -38,9 +38,7 @@ class DiscussionViewController: UIViewController {
             currentVC = profileVC
         }
         
-        if let contactVC = segue.destinationViewController as? ContactsViewController{
-            currentVC = contactVC
-        }
+      
     }
     
     

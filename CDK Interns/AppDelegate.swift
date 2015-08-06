@@ -16,30 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
        
-        
-        
-        // Override point for customization after application launch.
-/*
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        var interns = [Int: Intern]()
+        var messages = [Int: Message]()
 
-        let containerViewController = ContainerViewController()
-
-        window!.rootViewController = containerViewController
-        window!.makeKeyAndVisible()
+        DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
+            let json = JSON(data: data)
+            if let myAuthors = json["authors"].array{
+                for a in myAuthors{
+                    println(a)
+                    var newIntern = Intern(json: a)
+                    interns[newIntern.id] = newIntern
+                }
+            }
+        }
 
         return true
-    }
 
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let containerViewController = LoginViewController()
-        
-        window!.rootViewController = containerViewController
-        window!.makeKeyAndVisible()
-*/        
-        return true
-        
     }
 
     func applicationWillResignActive(application: UIApplication) {
