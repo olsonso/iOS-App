@@ -8,14 +8,10 @@
 
 import Foundation
 
-<<<<<<< HEAD
-//let TopAppURL = "https://itunes.apple.com/us/rss/topgrossingipadapplications/limit=25/json"
-var interns = [Int: Intern]()
-var messages = [Int: Message]()
-
-=======
->>>>>>> develop
 class DataManager {
+    
+    static let sharedInstance = DataManager()
+    
     private var Contacts: [Int : Contact]
     private var Messages: [Int : Message]
     private var LastTimestamp : Double

@@ -17,7 +17,6 @@ protocol CenterViewControllerDelegate {
 }
 
 class CenterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-
   
     @IBOutlet weak var mainContainer: UIView!
     @IBOutlet weak var tableView: UITableView!
@@ -36,8 +35,8 @@ class CenterViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Count: \(messages.count)")
-        return messages.count
+        print("Count: \(DataManager.sharedInstance!.getMessages().count)")
+        return DataManager.sharedInstance!.getMessages().count
         // Most of the time my data source is an array of something...  will replace with the actual name of the data source
     }
     
@@ -46,9 +45,9 @@ class CenterViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
         //cell.textLabel?.text = "hi"
         //cell.textLabel?.text = dataSourceArray[indexPath.row]
-        var message = messages[indexPath.row]
-        println(message!.body)
-        cell.textLabel?.text = ("\(message!.author_id) \(message!.body)")
+        var message = DataManager.sharedInstance!.getMessages()[indexPath.row]
+        println(message.Body)
+        cell.textLabel?.text = ("\(message.AuthorId) \(message.Body)")
         
         // set cell's textLabel.text property
         // set cell's detailTextLabel.text property
@@ -58,7 +57,7 @@ class CenterViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedContacts = messages.values
+        let selectedContacts = DataManager.sharedInstance!.getMessages()
         
     }
 

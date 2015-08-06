@@ -36,8 +36,8 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Count: \(interns.count)")
-        return interns.count
+        print("Count: \(DataManager.sharedInstance!.getContacts().count)")
+        return DataManager.sharedInstance!.getContacts().count
         // Most of the time my data source is an array of something...  will replace with the actual name of the data source
     }
     
@@ -46,8 +46,8 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
         //cell.textLabel?.text = "hi"
         //cell.textLabel?.text = dataSourceArray[indexPath.row]
-        var intern = interns[indexPath.row]
-        cell.textLabel?.text = intern!.first_name
+        var intern = DataManager.sharedInstance!.getContacts()[indexPath.row]
+        cell.textLabel?.text = intern.FirstName
         
         // set cell's textLabel.text property 
         // set cell's detailTextLabel.text property
@@ -57,7 +57,7 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedContacts = interns.values
+        let selectedContacts = DataManager.sharedInstance!.getContacts()
         
     }
     
