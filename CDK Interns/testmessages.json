@@ -7,38 +7,44 @@
 		"author_id" : 0, 
 		"subject" : "Check Out Pick!",
 		"body" : "You should check out this new database called Pick!  It’s rad!",	
-		"timestamp" : UNIX_TIMESTAMP,
+		"timestamp" : 1438819976,
 		"geolocation" : "Portland, OR",
 		"image" : "http:\\myimagehost.com\0.jpg"
 	},
 	{
 		"id" : 1,
+        "thread_id" : 1,
+        "ordinal_id" : 0,
 		"author_id" : 0, 
 		"subject" : "NE Bar Crawl Friday?",
 		"body" : "Anyone want to go check out a few bars in NE this Friday?",
-		"timestamp" : "2015-08-04T17:03:24Z",
+		"timestamp" : 1438819976,
 		"geolocation" : "Portland, OR",
-		"image" :
+		"image" : "http:\\myimagehost.com\0.jpg"
 		"tags" : ["portland", "afterwork"]
 	},
 	{
 		"id" : 2,
+        "thread_id" : 2,
+        "ordinal_id" : 0,
 		"author_id" : 1, 
 		"subject" : "Lunch",
 		"body" : "Going to food carts at 12:30.",
-		"timestamp" : "2015-08-04T17:03:24Z",
+		"timestamp" : 1438819976,
 		"geolocation" : "Portland, OR",
-		"image" :
+		"image" : "http:\\myimagehost.com\0.jpg"
 		"tags" : ["lunch"]
 	},
 	{
 		"id" : 3,
+        "thread_id" : 3,
+        "ordinal_id" : 0,
 		"author_id" : 2, 
 		"subject" : "YAJSF",
 		"body" : "Come learn about Yet Another Javascript Framework (YAJSF).  Do you like javascript?  Do you like acronyms? It’s like AngularJS but it does MVVCCM",
-		"timestamp" : "2015-08-04T17:03:24Z",
+		"timestamp" : 1438819976,
 		"geolocation" : "Portland, OR",
-		"image" :
+		"image" : "http:\\myimagehost.com\0.jpg"
 		"tags" : ["technology"]
 	}]
  }
