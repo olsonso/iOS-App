@@ -11,6 +11,7 @@
 		6E65D9C61B6AE97C00D4388F /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */; };
 		6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */; };
 		6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */; };
+		B10281F41B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = B10281F31B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision */; };
 		B17438E81B71681400C8D941 /* Group.h in Sources */ = {isa = PBXBuildFile; fileRef = B17438E71B71681400C8D941 /* Group.h */; };
 		B17438EC1B716CD600C8D941 /* MeetupCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B17438EB1B716CD600C8D941 /* MeetupCommunicator.m */; };
 		B1D6CD7A1B717314003B4BCF /* GroupBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD791B717314003B4BCF /* GroupBuilder.m */; };
@@ -73,6 +74,7 @@
 		6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg; sourceTree = "<group>"; };
+		B10281F31B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CDK_Intern_app_Development.mobileprovision; sourceTree = "<group>"; };
 		B17438E61B71681400C8D941 /* CDK Interns-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDK Interns-Bridging-Header.h"; sourceTree = "<group>"; };
 		B17438E71B71681400C8D941 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		B17438E91B716B6A00C8D941 /* MeetupCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetupCommunicatorDelegate.h; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				D86143CC1B571A1D00965D49 /* CDK InternsTests */,
 				D86143B51B571A1D00965D49 /* Products */,
 				B17438E61B71681400C8D941 /* CDK Interns-Bridging-Header.h */,
+				B10281F31B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision */,
 			);
 			sourceTree = "<group>";
 		};
@@ -366,6 +369,7 @@
 				D86143E81B571E1500965D49 /* Main.storyboard in Resources */,
 				6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */,
 				D41B18181B7155620016E0BD /* testevents.json in Resources */,
+				B10281F41B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision in Resources */,
 				D86143C11B571A1D00965D49 /* Images.xcassets in Resources */,
 				D86143EA1B571E8500965D49 /* CDK_Logo_TM_RGB_MinSize.png in Resources */,
 				D86143E31B571CC600965D49 /* reveal-icon.png in Resources */,
@@ -547,7 +551,7 @@
 				INFOPLIST_FILE = "CDK Interns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "76868518-eff8-442a-a47b-bb068b91a2fc";
+				PROVISIONING_PROFILE = "2a594dce-be25-4543-901e-fefc2d84095f";
 				SWIFT_OBJC_BRIDGING_HEADER = "CDK Interns-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -567,7 +571,7 @@
 				INFOPLIST_FILE = "CDK Interns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "76868518-eff8-442a-a47b-bb068b91a2fc";
+				PROVISIONING_PROFILE = "2a594dce-be25-4543-901e-fefc2d84095f";
 				SWIFT_OBJC_BRIDGING_HEADER = "CDK Interns-Bridging-Header.h";
 			};
 			name = Release;
