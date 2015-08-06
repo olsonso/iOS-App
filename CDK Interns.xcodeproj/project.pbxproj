@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54FA16D81B72D31800A64DA1 /* testupdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 54FA16D71B72D31800A64DA1 /* testupdate.json */; };
+		54FA16D81B72D31800A64DA1 /* testevents.json in Resources */ = {isa = PBXBuildFile; fileRef = 54FA16D71B72D31800A64DA1 /* testevents.json */; };
+		54FA16DA1B7326AE00A64DA1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA16D91B7326AE00A64DA1 /* Event.swift */; };
 		6E65D9C41B6AE6E200D4388F /* Contacts2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C31B6AE6E200D4388F /* Contacts2ViewController.swift */; };
 		6E65D9C61B6AE97C00D4388F /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */; };
 		6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */; };
@@ -22,10 +23,10 @@
 		B1D6CD8C1B717C87003B4BCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD8B1B717C87003B4BCF /* AppDelegate.m */; };
 		CFAE57801B715B1700DC75A0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE577F1B715B1700DC75A0 /* DataManager.swift */; };
 		CFAE57841B71629C00DC75A0 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE57831B71629C00DC75A0 /* AppModel.swift */; };
-		CFAE57921B72B16300DC75A0 /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE57911B72B16300DC75A0 /* Intern.swift */; };
+		CFAE57921B72B16300DC75A0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE57911B72B16300DC75A0 /* Contact.swift */; };
 		CFAE57941B72B19E00DC75A0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE57931B72B19E00DC75A0 /* Message.swift */; };
 		D41B18171B7155620016E0BD /* testauthors.json in Resources */ = {isa = PBXBuildFile; fileRef = D41B18151B7155620016E0BD /* testauthors.json */; };
-		D41B18181B7155620016E0BD /* testevents.json in Resources */ = {isa = PBXBuildFile; fileRef = D41B18161B7155620016E0BD /* testevents.json */; };
+		D41B18181B7155620016E0BD /* testmessages.json in Resources */ = {isa = PBXBuildFile; fileRef = D41B18161B7155620016E0BD /* testmessages.json */; };
 		D41B18221B72AAB70016E0BD /* SwiftyJSON.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = D41B18211B72AAB70016E0BD /* SwiftyJSON.swift */; };
 		D41B18241B72ABB70016E0BD /* SwiftyJSON1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B18231B72ABB70016E0BD /* SwiftyJSON1.swift */; };
 		D42E18721B6A9A5100DA2A31 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18711B6A9A5100DA2A31 /* DBViewController.swift */; };
@@ -70,7 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		54FA16D71B72D31800A64DA1 /* testupdate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testupdate.json; sourceTree = "<group>"; };
+		54FA16D71B72D31800A64DA1 /* testevents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testevents.json; sourceTree = "<group>"; };
+		54FA16D91B7326AE00A64DA1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		6E65D9C31B6AE6E200D4388F /* Contacts2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts2ViewController.swift; sourceTree = "<group>"; };
 		6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -94,10 +96,10 @@
 		B1D6CD8B1B717C87003B4BCF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CFAE577F1B715B1700DC75A0 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CFAE57831B71629C00DC75A0 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		CFAE57911B72B16300DC75A0 /* Intern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
+		CFAE57911B72B16300DC75A0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		CFAE57931B72B19E00DC75A0 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		D41B18151B7155620016E0BD /* testauthors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testauthors.json; sourceTree = "<group>"; };
-		D41B18161B7155620016E0BD /* testevents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testevents.json; sourceTree = "<group>"; };
+		D41B18161B7155620016E0BD /* testmessages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testmessages.json; sourceTree = "<group>"; };
 		D41B18211B72AAB70016E0BD /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "CDK Interns/SwiftyJSON.swift"; sourceTree = "<group>"; };
 		D41B18231B72ABB70016E0BD /* SwiftyJSON1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON1.swift; sourceTree = "<group>"; };
 		D42E18711B6A9A5100DA2A31 /* DBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
@@ -191,7 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				B1D6CD841B717AB9003B4BCF /* meetup */,
-				CFAE57911B72B16300DC75A0 /* Intern.swift */,
+				CFAE57911B72B16300DC75A0 /* Contact.swift */,
+				54FA16D91B7326AE00A64DA1 /* Event.swift */,
 				CFAE57931B72B19E00DC75A0 /* Message.swift */,
 				D41B18211B72AAB70016E0BD /* SwiftyJSON.swift */,
 				D49DB8721B6830D100EC120F /* CoreLocation.framework */,
@@ -225,8 +228,8 @@
 			children = (
 				D41B18231B72ABB70016E0BD /* SwiftyJSON1.swift */,
 				D41B18151B7155620016E0BD /* testauthors.json */,
-				D41B18161B7155620016E0BD /* testevents.json */,
-				54FA16D71B72D31800A64DA1 /* testupdate.json */,
+				D41B18161B7155620016E0BD /* testmessages.json */,
+				54FA16D71B72D31800A64DA1 /* testevents.json */,
 				D86143E71B571E1500965D49 /* Main.storyboard */,
 				D86143E51B571DF100965D49 /* LaunchScreen.xib */,
 				D86143B91B571A1D00965D49 /* AppDelegate.swift */,
@@ -368,11 +371,11 @@
 				D41B18171B7155620016E0BD /* testauthors.json in Resources */,
 				D86143E81B571E1500965D49 /* Main.storyboard in Resources */,
 				6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */,
-				D41B18181B7155620016E0BD /* testevents.json in Resources */,
+				D41B18181B7155620016E0BD /* testmessages.json in Resources */,
 				D86143C11B571A1D00965D49 /* Images.xcassets in Resources */,
 				D86143EA1B571E8500965D49 /* CDK_Logo_TM_RGB_MinSize.png in Resources */,
 				D86143E31B571CC600965D49 /* reveal-icon.png in Resources */,
-				54FA16D81B72D31800A64DA1 /* testupdate.json in Resources */,
+				54FA16D81B72D31800A64DA1 /* testevents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +395,7 @@
 			files = (
 				B1D6CD8C1B717C87003B4BCF /* AppDelegate.m in Sources */,
 				D42E18761B6ADDDB00DA2A31 /* DiscussionViewController.swift in Sources */,
-				CFAE57921B72B16300DC75A0 /* Intern.swift in Sources */,
+				CFAE57921B72B16300DC75A0 /* Contact.swift in Sources */,
 				D497A6C91B66DB7900653999 /* EditViewController.swift in Sources */,
 				B1D6CD801B717443003B4BCF /* MeetupManager.m in Sources */,
 				D4BE88621B62B6240040E584 /* LoginViewController.swift in Sources */,
@@ -402,6 +405,7 @@
 				D42E18741B6ACFE000DA2A31 /* CalendarViewController.swift in Sources */,
 				D41B18241B72ABB70016E0BD /* SwiftyJSON1.swift in Sources */,
 				CFAE57941B72B19E00DC75A0 /* Message.swift in Sources */,
+				54FA16DA1B7326AE00A64DA1 /* Event.swift in Sources */,
 				D86143DC1B571C6E00965D49 /* CenterViewController.swift in Sources */,
 				D86143BC1B571A1D00965D49 /* ViewController.swift in Sources */,
 				B1D6CD891B717C25003B4BCF /* Group.m in Sources */,

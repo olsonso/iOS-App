@@ -11,13 +11,12 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    var dataManager = DataManager()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        
-
+        /*
         DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
             let json = JSON(data: data)
             if let myAuthors = json["authors"].array{
@@ -28,6 +27,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        */
+        
+        /*
+        DataManager.updateFromFileWithSuccess { (data) -> Void in
+            var eventSequence : [Event]
+            let json = JSON(data: data)
+            if let jsonEvents = json["events"].array {
+                for je in jsonEvents {
+                    if let e = Event(json: je) {
+                        eventSequence.append(e)
+                    }
+                }
+                
+                eventSequence.sort { $0.timestamp > $1.timestamp }
+            }
+        }
+        */
+        
+        dataManager?.getUpdateAsync()
 
         return true
 
