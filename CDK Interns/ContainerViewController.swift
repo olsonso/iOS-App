@@ -15,12 +15,12 @@ enum SlideOutState {
   case RightPanelExpanded
 }
 
-class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, CalendarViewControllerDelegate, DiscussionViewControllerDelegate, Contacts2ViewControllerDelegate, FAQViewControllerDelegate, SettingsViewControllerDelegate, ProfileViewControllerDelegate, UIGestureRecognizerDelegate {
+class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, CalendarViewControllerDelegate, Contacts2ViewControllerDelegate, FAQViewControllerDelegate, SettingsViewControllerDelegate, ProfileViewControllerDelegate, UIGestureRecognizerDelegate {
   
   var centerNavigationController: UINavigationController!
   var centerViewController: CenterViewController!
   var calendarViewController: CalendarViewController!
-  var discussionViewController: DiscussionViewController!
+ 
   var contacts2ViewController: Contacts2ViewController!
   var faqViewController: FAQViewController!
   var settingsViewController: SettingsViewController!
@@ -46,9 +46,6 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, S
     
     calendarViewController = UIStoryboard.calendarViewController()
     calendarViewController.delegate = self
-    
-    discussionViewController = UIStoryboard.discussionViewController()
-    discussionViewController.delegate = self
     
     contacts2ViewController = UIStoryboard.contacts2ViewController()
     contacts2ViewController.delegate = self
@@ -259,9 +256,6 @@ extension ContainerViewController: UIGestureRecognizerDelegate {
     
   class func calendarViewController() -> CalendarViewController? {
     return mainStoryboard().instantiateViewControllerWithIdentifier("CalendarViewController") as? CalendarViewController
-  }
-  class func discussionViewController() -> DiscussionViewController? {
-    return mainStoryboard().instantiateViewControllerWithIdentifier("DiscussionViewController") as? DiscussionViewController
   }
   class func contacts2ViewController() -> Contacts2ViewController? {
     return mainStoryboard().instantiateViewControllerWithIdentifier("Contacts2ViewController") as? Contacts2ViewController

@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        
+
         /*
+
         DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
             let json = JSON(data: data)
             if let myAuthors = json["authors"].array{
@@ -28,6 +30,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        
+        DataManager.getMessageDataFromFileWithSuccess { (data) -> Void in
+            let json2 = JSON(data: data)
+            if let myMessages = json2["events"].array{
+                print("Local count: \(myMessages.count)")
+                for m in myMessages{                    println(m)
+                    var newMessage = Message(json: m)
+                    messages[newMessage.id] = newMessage
+                }
+            }
+            else{
+                println("fail")
+            }
+            print("Global count: \(messages.count)")
+            
+        }
+
 
         */
         
