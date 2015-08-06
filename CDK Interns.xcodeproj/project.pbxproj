@@ -14,6 +14,7 @@
 		6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */; };
 		6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */; };
 		B10281F41B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = B10281F31B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision */; };
+		B10281F61B741FC0000CCD42 /* LoopBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10281F51B741FC0000CCD42 /* LoopBack.framework */; };
 		B17438E81B71681400C8D941 /* Group.h in Sources */ = {isa = PBXBuildFile; fileRef = B17438E71B71681400C8D941 /* Group.h */; };
 		B17438EC1B716CD600C8D941 /* MeetupCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B17438EB1B716CD600C8D941 /* MeetupCommunicator.m */; };
 		B1D6CD7A1B717314003B4BCF /* GroupBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6CD791B717314003B4BCF /* GroupBuilder.m */; };
@@ -79,6 +80,8 @@
 		6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg; sourceTree = "<group>"; };
 		B10281F31B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CDK_Intern_app_Development.mobileprovision; sourceTree = "<group>"; };
+		B10281F51B741FC0000CCD42 /* LoopBack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoopBack.framework; sourceTree = "<group>"; };
+		B10281F71B742046000CCD42 /* LoopBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopBack.h; sourceTree = "<group>"; };
 		B17438E61B71681400C8D941 /* CDK Interns-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDK Interns-Bridging-Header.h"; sourceTree = "<group>"; };
 		B17438E71B71681400C8D941 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		B17438E91B716B6A00C8D941 /* MeetupCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetupCommunicatorDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41B18221B72AAB70016E0BD /* SwiftyJSON.swift in Frameworks */,
+				B10281F61B741FC0000CCD42 /* LoopBack.framework in Frameworks */,
 				D49DB8731B6830D100EC120F /* CoreLocation.framework in Frameworks */,
 				D49DB86D1B6830BF00EC120F /* libsqlite3.dylib in Frameworks */,
 				D49DB86E1B6830BF00EC120F /* libz.dylib in Frameworks */,
@@ -194,6 +198,7 @@
 		D86143AB1B571A1D00965D49 = {
 			isa = PBXGroup;
 			children = (
+				B10281F71B742046000CCD42 /* LoopBack.h */,
 				B1D6CD841B717AB9003B4BCF /* meetup */,
 				CFAE57911B72B16300DC75A0 /* Contact.swift */,
 				54FA16D91B7326AE00A64DA1 /* Event.swift */,
@@ -212,6 +217,7 @@
 				D86143B61B571A1D00965D49 /* CDK Interns */,
 				D86143CC1B571A1D00965D49 /* CDK InternsTests */,
 				D86143B51B571A1D00965D49 /* Products */,
+				B10281F51B741FC0000CCD42 /* LoopBack.framework */,
 				B17438E61B71681400C8D941 /* CDK Interns-Bridging-Header.h */,
 				B10281F31B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision */,
 			);
@@ -374,9 +380,8 @@
 				D41B18171B7155620016E0BD /* testauthors.json in Resources */,
 				D86143E81B571E1500965D49 /* Main.storyboard in Resources */,
 				6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */,
-
 				D41B18181B7155620016E0BD /* testmessages.json in Resources */,
-				D41B18181B7155620016E0BD /* testevents.json in Resources */,
+				D41B18181B7155620016E0BD /* testmessages.json in Resources */,
 				B10281F41B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision in Resources */,
 				D86143C11B571A1D00965D49 /* Images.xcassets in Resources */,
 				D86143EA1B571E8500965D49 /* CDK_Logo_TM_RGB_MinSize.png in Resources */,
@@ -557,6 +562,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/olsons/Downloads/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "CDK Interns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -577,6 +583,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/olsons/Downloads/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "CDK Interns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
