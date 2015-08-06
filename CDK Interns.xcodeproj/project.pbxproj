@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54FA16D81B72D31800A64DA1 /* testupdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 54FA16D71B72D31800A64DA1 /* testupdate.json */; };
 		6E65D9C41B6AE6E200D4388F /* Contacts2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C31B6AE6E200D4388F /* Contacts2ViewController.swift */; };
 		6E65D9C61B6AE97C00D4388F /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */; };
 		6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54FA16D71B72D31800A64DA1 /* testupdate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testupdate.json; sourceTree = "<group>"; };
 		6E65D9C31B6AE6E200D4388F /* Contacts2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts2ViewController.swift; sourceTree = "<group>"; };
 		6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				D41B18231B72ABB70016E0BD /* SwiftyJSON1.swift */,
 				D41B18151B7155620016E0BD /* testauthors.json */,
 				D41B18161B7155620016E0BD /* testevents.json */,
+				54FA16D71B72D31800A64DA1 /* testupdate.json */,
 				D86143E71B571E1500965D49 /* Main.storyboard */,
 				D86143E51B571DF100965D49 /* LaunchScreen.xib */,
 				D86143B91B571A1D00965D49 /* AppDelegate.swift */,
@@ -369,6 +372,7 @@
 				D86143C11B571A1D00965D49 /* Images.xcassets in Resources */,
 				D86143EA1B571E8500965D49 /* CDK_Logo_TM_RGB_MinSize.png in Resources */,
 				D86143E31B571CC600965D49 /* reveal-icon.png in Resources */,
+				54FA16D81B72D31800A64DA1 /* testupdate.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
