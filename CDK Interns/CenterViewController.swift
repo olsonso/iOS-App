@@ -28,9 +28,10 @@ class CenterViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+   
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        println("sections")
         return 1 // This was put in mainly for my own unit testing
     }
 
@@ -46,7 +47,8 @@ class CenterViewController: UIViewController, UITableViewDataSource, UITableView
         //cell.textLabel?.text = "hi"
         //cell.textLabel?.text = dataSourceArray[indexPath.row]
         var message = messages[indexPath.row]
-        //cell.textLabel?.text = ("\(message!.author_id) \(message!.body)")
+        println(message!.body)
+        cell.textLabel?.text = ("\(message!.author_id) \(message!.body)")
         
         // set cell's textLabel.text property
         // set cell's detailTextLabel.text property

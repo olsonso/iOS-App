@@ -24,7 +24,9 @@ enum MenuItem: Int {
     
     func viewController() -> UIViewController {
         switch (self) {
-        case Home: return UIStoryboard.centerViewController()!
+        case Home:
+            println("were here")
+            return UIStoryboard.centerViewController()!
         case Profile: return UIStoryboard.profileViewController()!
         case Calendar: return UIStoryboard.calendarViewController()!
         case Discussion: return UIStoryboard.discussionViewController()!
