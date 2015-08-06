@@ -11,39 +11,101 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    var dataManager = DataManager()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+       
+
         /*
-        let json = JSON(data: DataManager)
-        let json = JSON(jsonObject)
-        
-        if let dataFromString = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
-            let json = JSON(data: dataFromString)
-        }
-        
-        for (key: String, subJson: JSON) in json {
-            println(key)
-        }
-        
-        
-        var authors = [Int: String]()
-        
-        
+
         DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
             let json = JSON(data: data)
-            if let authorName = json["authors"][0]["first_name"].string {
-                println("Author: \(authorName)")
-            }
-            else{
-                println("parse fail")
+            if let myAuthors = json["authors"].array{
+                for a in myAuthors{
+                    println(a)
+                    var newIntern = Intern(json: a)
+                    interns[newIntern.id] = newIntern
+                }
             }
         }
-*/
+        
+        DataManager.getMessageDataFromFileWithSuccess { (data) -> Void in
+            let json2 = JSON(data: data)
+            if let myMessages = json2["events"].array{
+                print("Local count: \(myMessages.count)")
+                for m in myMessages{                    println(m)
+                    var newMessage = Message(json: m)
+                    messages[newMessage.id] = newMessage
+                }
+            }
+            else{
+                println("fail")
+            }
+            print("Global count: \(messages.count)")
+            
+        }
+
+
+        */
+        
+        /*
+        DataManager.updateFromFileWithSuccess { (data) -> Void in
+            var eventSequence : [Event]
+            let json = JSON(data: data)
+            if let jsonEvents = json["events"].array {
+                for je in jsonEvents {
+                    if let e = Event(json: je) {
+                        eventSequence.append(e)
+                    }
+                }
+                
+                eventSequence.sort { $0.timestamp > $1.timestamp }
+            }
+        }
+        */
+        
+        dataManager?.getUpdateAsync()
+
+
+        
+        let types = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound | UIUserNotificationType.Badge, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(types)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+//        let notificationTypes:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
+//        let notificationSettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationTypes, categories: nil)
+//        
+//        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+//        
+//        // somewhere when your app starts up
+//        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
         return true
 
+    }
+    
+//    func application(application: UIApplication!, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings!) {
+//        UIApplication.sharedApplication().registerForRemoteNotifications()
+//    }
+//    
+//    func application(application: UIApplication!, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData!) {
+//        let currentInstallation: PFInstallation = PFInstallation.currentInstallation()
+//        currentInstallation.setDeviceTokenFromData(deviceToken)
+//        currentInstallation.saveInBackground()
+//        let foo =
+//    }
+//    
+//    func application(application: UIApplication!, didFailToRegisterForRemoteNotificationsWithError error: NSError!) {
+//        println(error.localizedDescription)
+//    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        println("Got token data! \(deviceToken)")
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        println("Couldn't register: \(error)")
     }
 
     func applicationWillResignActive(application: UIApplication) {

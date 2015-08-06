@@ -15,12 +15,12 @@ enum SlideOutState {
   case RightPanelExpanded
 }
 
-class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, CalendarViewControllerDelegate, DiscussionViewControllerDelegate, Contacts2ViewControllerDelegate, FAQViewControllerDelegate, SettingsViewControllerDelegate, ProfileViewControllerDelegate, UIGestureRecognizerDelegate {
+class ContainerViewController: UIViewController, CenterViewControllerDelegate, SidePanelViewControllerDelegate, CalendarViewControllerDelegate, Contacts2ViewControllerDelegate, FAQViewControllerDelegate, SettingsViewControllerDelegate, ProfileViewControllerDelegate, UIGestureRecognizerDelegate {
   
   var centerNavigationController: UINavigationController!
   var centerViewController: CenterViewController!
   var calendarViewController: CalendarViewController!
-  var discussionViewController: DiscussionViewController!
+ 
   var contacts2ViewController: Contacts2ViewController!
   var faqViewController: FAQViewController!
   var settingsViewController: SettingsViewController!
@@ -46,9 +46,6 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, S
     
     calendarViewController = UIStoryboard.calendarViewController()
     calendarViewController.delegate = self
-    
-    discussionViewController = UIStoryboard.discussionViewController()
-    discussionViewController.delegate = self
     
     contacts2ViewController = UIStoryboard.contacts2ViewController()
     contacts2ViewController.delegate = self
@@ -81,10 +78,12 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, S
 extension ContainerViewController: SidePanelViewControllerDelegate {
         func itemSelected(item: MenuItem) {
             let vc = item.viewController()
-            
+            var image = UIImage(named: "reveal-icon.png")
+            image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
             //TODO:
             //add nav bar button rather than "menu"
-            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .Plain, target: self, action: "toggleLeftPanel")
+            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .Plain, target: self, action: "toggleLeftPanel")
+           //vc.navigationItem.leftBarButtonItem = UIBarButtonItem(image: "reveal-icon.png", style: nil, target: self, action: "toggleLeftPanel")
             self.centerNavigationController.viewControllers = [vc]
             self.collapseSidePanels()
         }
@@ -257,9 +256,6 @@ extension ContainerViewController: UIGestureRecognizerDelegate {
     
   class func calendarViewController() -> CalendarViewController? {
     return mainStoryboard().instantiateViewControllerWithIdentifier("CalendarViewController") as? CalendarViewController
-  }
-  class func discussionViewController() -> DiscussionViewController? {
-    return mainStoryboard().instantiateViewControllerWithIdentifier("DiscussionViewController") as? DiscussionViewController
   }
   class func contacts2ViewController() -> Contacts2ViewController? {
     return mainStoryboard().instantiateViewControllerWithIdentifier("Contacts2ViewController") as? Contacts2ViewController
