@@ -17,8 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        
-        var interns = [Int: Intern]()
-        var messages = [Int: Message]()
 
         DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
             let json = JSON(data: data)
