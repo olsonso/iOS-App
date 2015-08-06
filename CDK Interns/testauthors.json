@@ -5,6 +5,7 @@
 		"first_name" : "Magic",
 		"last_name" : "Unicorn",
 		"email" : "magic.unicorn@cdk.com",
+        "img" : "http:\\myimagehost.com\0.jpg",
 		"position" : "Mascot"
 	},
 	{
@@ -12,6 +13,7 @@
 		"first_name" : "Cute",
 		"last_name" : "Kitten",
 		"email" : "cute.kitten@cdk.com",
+        "img" : "http:\\myimagehost.com\0.jpg",
 		"position" : "Internet Meme"
 	},
 	{
@@ -19,6 +21,7 @@
 		"first_name" : "Rock",
 		"last_name" : "Star",
 		"email" : "super.star@cdk.com",
+        "img" : "http:\\myimagehost.com\0.jpg",
 		"position" : "Ninja Coder"
 	}]
 }	

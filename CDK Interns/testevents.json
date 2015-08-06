@@ -1,43 +1,109 @@
 {
-	"events" : [
-	{
-		"id" : 0,
-		"author_id" : 0, 
-		"subject" : "Check Out Pick!",
-		"body" : "You should check out this new database called Pick!  It’s rad!",	
-		"timestamp" : "2015-08-04T16:56:52+00:00",
-		"geolocation" : "Portland, OR",
-		"image" :
-		"tags" : ["random"]
-	},
-	{
-		"id" : 1,
-		"author_id" : 0, 
-		"subject" : "NE Bar Crawl Friday?",
-		"body" : "Anyone want to go check out a few bars in NE this Friday?",
-		"timestamp" : "2015-08-04T17:03:24Z",
-		"geolocation" : "Portland, OR",
-		"image" :
-		"tags" : ["portland", "afterwork"]
-	},
-	{
-		"id" : 2,
-		"author_id" : 1, 
-		"subject" : "Lunch",
-		"body" : "Going to food carts at 12:30.",
-		"timestamp" : "2015-08-04T17:03:24Z",
-		"geolocation" : "Portland, OR",
-		"image" :
-		"tags" : ["lunch"]
-	},
-	{
-		"id" : 3,
-		"author_id" : 2, 
-		"subject" : "YAJSF",
-		"body" : "Come learn about Yet Another Javascript Framework (YAJSF).  Do you like javascript?  Do you like acronyms? It’s like AngularJS but it does MVVCCM",
-		"timestamp" : "2015-08-04T17:03:24Z",
-		"geolocation" : "Portland, OR",
-		"image" :
-		"tags" : ["technology"]
-	}]
- }
+    "events" : [
+        {
+            "timestamp" : 1438819976,
+            "action" : "update",
+            "type" : "contact",
+                "content" : {
+                "id" : 0,
+                "first_name" : "Magic",
+                "last_name" : "Unicorn",
+                "email" : "magic.unicorn@cdk.com",
+                "position" : "Mascot"
+            }
+        },
+        {
+            "timestamp" : 1438819976,
+            "action" : "update",
+            "type" : "contact",
+                "content" : {
+                "id" : 1,
+                "first_name" : "Cute",
+                "last_name" : "Kitten",
+                "email" : "cute.kitten@cdk.com",
+                "position" : "Internet Meme"
+            }
+        },
+        {
+            "timestamp" : 1438819976,
+            "action" : "delete",
+            "type" : "contact",
+                "content" : {
+                "id" : 2,
+                "first_name" : "Rock",
+                "last_name" : "Star",
+                "email" : "super.star@cdk.com",
+                "position" : "Ninja Coder"
+            }
+        },
+        {
+            "timestamp" : 1438819976,
+            "action" : "update",
+            "type" : "message",
+            "content" : {
+                "id" : 0
+                "thread_id" : 0,
+                "ordinal_id" : 0,
+                "author_id" : 0,
+                "subject" : "Check Out Pick!",
+                "body" : "You should check out this new database called Pick!  It’s rad!",
+                "timestamp" : "2015-08-04T16:56:52+00:00",
+                "geolocation" : "Portland, OR",
+                "image" :
+                "tags" : ["random"]
+            }
+        },
+        {
+            "timestamp" : 1438819976,
+            "action" : "update",
+            "type" : "message",
+            "content" : {
+                "id" : 1,
+                "thread_id" : 1,
+                "ordinal_id" : 0,
+                "author_id" : 0,
+                "subject" : "NE Bar Crawl Friday?",
+                "body" : "Anyone want to go check out a few bars in NE this Friday?",
+                "timestamp" : "2015-08-04T17:03:24Z",
+                "geolocation" : "Portland, OR",
+                "image" :
+                "tags" : ["portland", "afterwork"]
+            }
+        },
+        {
+            "timestamp" : 1438819976,
+            "operation" : "update",
+            "type" : "message",
+            "content" : {
+                "id" : 2,
+                "thread_id" : 2,
+                "ordinal_id" : 0,
+                "author_id" : 1,
+                "subject" : "Lunch",
+                "body" : "Going to food carts at 12:30.",
+                "timestamp" : "2015-08-04T17:03:24Z",
+                "geolocation" : "Portland, OR",
+                "image" :
+                "tags" : ["lunch"]
+            }
+        },
+        {
+            "timestamp" : 1438819976,
+            "operation" : "update",
+            "type" : "message",
+            "content" : {
+                "id" : 3,
+                "thread_id" : 3,
+                "ordinal_id" : 0,
+                "author_id" : 2, 
+                "subject" : "YAJSF",
+                "body" : "Come learn about Yet Another Javascript Framework (YAJSF).  Do you like javascript?  Do you like acronyms? It’s like AngularJS but it does MVVCCM",
+                "timestamp" : "2015-08-04T17:03:24Z",
+                "geolocation" : "Portland, OR",
+                "image" :
+                "tags" : ["technology"]
+            }
+        }
+    ]
+}
+

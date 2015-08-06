@@ -11,14 +11,13 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    var dataManager = DataManager()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        
-        var interns = [Int: Intern]()
-        var messages = [Int: Message]()
+
+        /*
 
         DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
             let json = JSON(data: data)
@@ -30,9 +29,83 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        
+        DataManager.getMessageDataFromFileWithSuccess { (data) -> Void in
+            let json2 = JSON(data: data)
+            if let myMessages = json2["events"].array{
+                print("Local count: \(myMessages.count)")
+                for m in myMessages{                    println(m)
+                    var newMessage = Message(json: m)
+                    messages[newMessage.id] = newMessage
+                }
+            }
+            else{
+                println("fail")
+            }
+            print("Global count: \(messages.count)")
+            
+        }
 
+
+        */
+        
+        /*
+        DataManager.updateFromFileWithSuccess { (data) -> Void in
+            var eventSequence : [Event]
+            let json = JSON(data: data)
+            if let jsonEvents = json["events"].array {
+                for je in jsonEvents {
+                    if let e = Event(json: je) {
+                        eventSequence.append(e)
+                    }
+                }
+                
+                eventSequence.sort { $0.timestamp > $1.timestamp }
+            }
+        }
+        */
+        
+        dataManager?.getUpdateAsync()
+
+
+        
+        let types = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound | UIUserNotificationType.Badge, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(types)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+//        let notificationTypes:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
+//        let notificationSettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationTypes, categories: nil)
+//        
+//        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+//        
+//        // somewhere when your app starts up
+//        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
         return true
 
+    }
+    
+//    func application(application: UIApplication!, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings!) {
+//        UIApplication.sharedApplication().registerForRemoteNotifications()
+//    }
+//    
+//    func application(application: UIApplication!, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData!) {
+//        let currentInstallation: PFInstallation = PFInstallation.currentInstallation()
+//        currentInstallation.setDeviceTokenFromData(deviceToken)
+//        currentInstallation.saveInBackground()
+//        let foo =
+//    }
+//    
+//    func application(application: UIApplication!, didFailToRegisterForRemoteNotificationsWithError error: NSError!) {
+//        println(error.localizedDescription)
+//    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        println("Got token data! \(deviceToken)")
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        println("Couldn't register: \(error)")
     }
 
     func applicationWillResignActive(application: UIApplication) {
