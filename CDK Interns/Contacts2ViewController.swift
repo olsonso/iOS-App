@@ -37,9 +37,6 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("Count: \(interns.count)")
-        /*for intern in interns.values {
-            println("Name: \(intern.first_name)")
-        }*/
         return interns.count
         // Most of the time my data source is an array of something...  will replace with the actual name of the data source
     }

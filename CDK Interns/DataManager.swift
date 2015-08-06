@@ -40,6 +40,22 @@ class DataManager {
         })
     }
     
+    
+    class func getMessageDataFromFileWithSuccess(success: ((data: NSData) -> Void)) {
+        //1
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+            //2
+            let filePath = NSBundle.mainBundle().pathForResource("testevents",ofType:"json")
+            
+            var readError:NSError?
+            if let data = NSData(contentsOfFile:filePath!,
+                options: NSDataReadingOptions.DataReadingUncached,
+                error:&readError) {
+                    success(data: data)
+            }
+        })
+    }
+    
     class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
         var session = NSURLSession.sharedSession()
         

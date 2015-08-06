@@ -28,6 +28,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        
+        DataManager.getMessageDataFromFileWithSuccess { (data) -> Void in
+            let json = JSON(data: data)
+            if let myMessages = json["events"].array{
+                for m in myMessages{
+                    println(m)
+                    var newMessage = Message(json: m)
+                    messages[newMessage.id] = newMessage
+                }
+            }
+        }
+
 
         return true
 
