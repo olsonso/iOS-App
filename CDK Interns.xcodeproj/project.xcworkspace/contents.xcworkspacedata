@@ -2,6 +2,42 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CDK_Logo_Horiz_TM_RGB_300dpi.png">
+   </FileRef>
+   <FileRef
+      location = "group:CDK-Global-formerly-ADP.png">
+   </FileRef>
+   <FileRef
+      location = "group:Meetup-screenshot.jpeg">
+   </FileRef>
+   <FileRef
+      location = "group:telephone5.png">
+   </FileRef>
+   <FileRef
+      location = "group:add139.png">
+   </FileRef>
+   <FileRef
+      location = "group:AddButton.png">
+   </FileRef>
+   <FileRef
+      location = "group:Background.jpg">
+   </FileRef>
+   <FileRef
+      location = "group:backgroundwhiteblurred.jpg">
+   </FileRef>
+   <FileRef
+      location = "group:email19.png">
+   </FileRef>
+   <FileRef
+      location = "group:message30.png">
+   </FileRef>
+   <FileRef
+      location = "group:pin56.png">
+   </FileRef>
+   <FileRef
+      location = "group:Profile-Laughing-Circle-BIG.png">
+   </FileRef>
+   <FileRef
       location = "self:CDK Interns.xcodeproj">
    </FileRef>
 </Workspace>
