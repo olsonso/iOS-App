@@ -25,7 +25,7 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
     var delegate: Contacts2ViewControllerDelegate?
     var currentVC : UIViewController?
     //let keyArray = interns.keys
-    //let dataSourceArray = ["Ariel", "Belle", "Cinderella", "Donald Duck", "Dory", "Figaro", "Genie", "Goofy", "Jasmine", "Jagar", "Lightning McQueen", "Mickey Mouse", "Mike", "Minnie Mouse", "Mulan", "Pocahontas", "Pluto", "Rafiki", "Rapunzel", "Sharkbait", "Snow White",  "Sulley", "Tiana", "WALL-E"]
+    let dataSourceArray = ["Ariel", "Belle", "Cinderella", "Donald Duck", "Dory", "Figaro", "Genie", "Goofy", "Jasmine", "Jagar", "Lightning McQueen", "Mickey Mouse", "Mike", "Minnie Mouse", "Mulan", "Pocahontas", "Pluto", "Rafiki", "Rapunzel", "Sharkface", "Snow White",  "Sulley", "Tiana", "WALL-E"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +36,9 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Count: \(DataManager.sharedInstance!.getContacts().count)")
-        return DataManager.sharedInstance!.getContacts().count
+        //print("Count: \(DataManager.sharedInstance!.getContacts().count)")
+        //return DataManager.sharedInstance!.getContacts().count
+        return dataSourceArray.count
         // Most of the time my data source is an array of something...  will replace with the actual name of the data source
     }
     
@@ -45,9 +46,9 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
         // Note:  Be sure to replace the argument to dequeueReusableCellWithIdentifier with the actual identifier string!
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
         //cell.textLabel?.text = "hi"
-        //cell.textLabel?.text = dataSourceArray[indexPath.row]
-        var intern = DataManager.sharedInstance!.getContacts()[indexPath.row]
-        cell.textLabel?.text = intern.FirstName
+        cell.textLabel?.text = dataSourceArray[indexPath.row]
+        //var intern = DataManager.sharedInstance!.getContacts()[indexPath.row]
+        //cell.textLabel?.text = intern.FirstName
         
         // set cell's textLabel.text property 
         // set cell's detailTextLabel.text property
