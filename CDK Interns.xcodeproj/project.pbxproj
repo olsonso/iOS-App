@@ -13,12 +13,6 @@
 		6E65D9C61B6AE97C00D4388F /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */; };
 		6E65D9C81B6AEBD500D4388F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */; };
 		6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */; };
-
-		D41B18271B72C2290016E0BD /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41B18251B72C2290016E0BD /* Background.jpg */; };
-		D41B18281B72C2290016E0BD /* backgroundwhiteblurred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */; };
-		D41B182B1B72C3EF0016E0BD /* AddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D41B18291B72C3EF0016E0BD /* AddButton.png */; };
-		D41B182C1B72C3EF0016E0BD /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = D41B182A1B72C3EF0016E0BD /* profile.png */; };
-
 		B10281F41B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = B10281F31B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision */; };
 		B17438E81B71681400C8D941 /* Group.h in Sources */ = {isa = PBXBuildFile; fileRef = B17438E71B71681400C8D941 /* Group.h */; };
 		B17438EC1B716CD600C8D941 /* MeetupCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B17438EB1B716CD600C8D941 /* MeetupCommunicator.m */; };
@@ -36,8 +30,43 @@
 		D41B18181B7155620016E0BD /* testmessages.json in Resources */ = {isa = PBXBuildFile; fileRef = D41B18161B7155620016E0BD /* testmessages.json */; };
 		D41B18221B72AAB70016E0BD /* SwiftyJSON.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = D41B18211B72AAB70016E0BD /* SwiftyJSON.swift */; };
 		D41B18241B72ABB70016E0BD /* SwiftyJSON1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B18231B72ABB70016E0BD /* SwiftyJSON1.swift */; };
+		D41B18271B72C2290016E0BD /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41B18251B72C2290016E0BD /* Background.jpg */; };
+		D41B18281B72C2290016E0BD /* backgroundwhiteblurred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */; };
+		D41B182B1B72C3EF0016E0BD /* AddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D41B18291B72C3EF0016E0BD /* AddButton.png */; };
+		D41B182C1B72C3EF0016E0BD /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = D41B182A1B72C3EF0016E0BD /* profile.png */; };
 		D42E18721B6A9A5100DA2A31 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18711B6A9A5100DA2A31 /* DBViewController.swift */; };
 		D42E18741B6ACFE000DA2A31 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */; };
+		D492EC8D1B742FB000339821 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = D492EC8C1B742FB000339821 /* FAQ.swift */; };
+		D492EC951B744BD400339821 /* Quicksand_Dash.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC8E1B744BD400339821 /* Quicksand_Dash.otf */; };
+		D492EC961B744BD400339821 /* Quicksand_Dash.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC8E1B744BD400339821 /* Quicksand_Dash.otf */; };
+		D492EC971B744BD400339821 /* Quicksand-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC8F1B744BD400339821 /* Quicksand-Bold.otf */; };
+		D492EC981B744BD400339821 /* Quicksand-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC8F1B744BD400339821 /* Quicksand-Bold.otf */; };
+		D492EC991B744BD400339821 /* Quicksand-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC901B744BD400339821 /* Quicksand-BoldItalic.otf */; };
+		D492EC9A1B744BD400339821 /* Quicksand-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC901B744BD400339821 /* Quicksand-BoldItalic.otf */; };
+		D492EC9B1B744BD400339821 /* Quicksand-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC911B744BD400339821 /* Quicksand-Italic.otf */; };
+		D492EC9C1B744BD400339821 /* Quicksand-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC911B744BD400339821 /* Quicksand-Italic.otf */; };
+		D492EC9D1B744BD400339821 /* Quicksand-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC921B744BD400339821 /* Quicksand-Light.otf */; };
+		D492EC9E1B744BD400339821 /* Quicksand-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC921B744BD400339821 /* Quicksand-Light.otf */; };
+		D492EC9F1B744BD400339821 /* Quicksand-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC931B744BD400339821 /* Quicksand-LightItalic.otf */; };
+		D492ECA01B744BD400339821 /* Quicksand-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC931B744BD400339821 /* Quicksand-LightItalic.otf */; };
+		D492ECA11B744BD400339821 /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC941B744BD400339821 /* Quicksand-Regular.otf */; };
+		D492ECA21B744BD400339821 /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC941B744BD400339821 /* Quicksand-Regular.otf */; };
+		D492ECA41B744F5100339821 /* Profile-Laughing-Circle-BIG.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA31B744F5100339821 /* Profile-Laughing-Circle-BIG.png */; };
+		D492ECA51B744F5100339821 /* Profile-Laughing-Circle-BIG.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA31B744F5100339821 /* Profile-Laughing-Circle-BIG.png */; };
+		D492ECA71B74585300339821 /* backgroundwhiteblurred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA61B74585300339821 /* backgroundwhiteblurred.jpg */; };
+		D492ECA81B74585300339821 /* backgroundwhiteblurred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA61B74585300339821 /* backgroundwhiteblurred.jpg */; };
+		D492ECAE1B74595400339821 /* add139.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA91B74595400339821 /* add139.png */; };
+		D492ECAF1B74595400339821 /* add139.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA91B74595400339821 /* add139.png */; };
+		D492ECB01B74595400339821 /* email19.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAA1B74595400339821 /* email19.png */; };
+		D492ECB11B74595400339821 /* email19.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAA1B74595400339821 /* email19.png */; };
+		D492ECB21B74595400339821 /* message30.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAB1B74595400339821 /* message30.png */; };
+		D492ECB31B74595400339821 /* message30.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAB1B74595400339821 /* message30.png */; };
+		D492ECB41B74595400339821 /* pin56.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAC1B74595400339821 /* pin56.png */; };
+		D492ECB51B74595400339821 /* pin56.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAC1B74595400339821 /* pin56.png */; };
+		D492ECB61B74595400339821 /* telephone5.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAD1B74595400339821 /* telephone5.png */; };
+		D492ECB71B74595400339821 /* telephone5.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAD1B74595400339821 /* telephone5.png */; };
+		D492ECB91B74625D00339821 /* Meetup-screenshot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D492ECB81B74625D00339821 /* Meetup-screenshot.jpeg */; };
+		D492ECBA1B74625D00339821 /* Meetup-screenshot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D492ECB81B74625D00339821 /* Meetup-screenshot.jpeg */; };
 		D497A6C91B66DB7900653999 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D497A6C81B66DB7900653999 /* EditViewController.swift */; };
 		D49DB8611B68305D00EC120F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49DB8601B68305D00EC120F /* AudioToolbox.framework */; };
 		D49DB8631B68306400EC120F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49DB8621B68306400EC120F /* CFNetwork.framework */; };
@@ -83,12 +112,6 @@
 		6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		6E65D9C71B6AEBD500D4388F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg; sourceTree = "<group>"; };
-
-		D41B18251B72C2290016E0BD /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
-		D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundwhiteblurred.jpg; sourceTree = "<group>"; };
-		D41B18291B72C3EF0016E0BD /* AddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddButton.png; sourceTree = "<group>"; };
-		D41B182A1B72C3EF0016E0BD /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
-
 		B10281F31B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CDK_Intern_app_Development.mobileprovision; sourceTree = "<group>"; };
 		B17438E61B71681400C8D941 /* CDK Interns-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDK Interns-Bridging-Header.h"; sourceTree = "<group>"; };
 		B17438E71B71681400C8D941 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
@@ -107,7 +130,6 @@
 		B1D6CD881B717C25003B4BCF /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		B1D6CD8A1B717C87003B4BCF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1D6CD8B1B717C87003B4BCF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-
 		CFAE577F1B715B1700DC75A0 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CFAE57831B71629C00DC75A0 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		CFAE57911B72B16300DC75A0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
@@ -116,8 +138,28 @@
 		D41B18161B7155620016E0BD /* testmessages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testmessages.json; sourceTree = "<group>"; };
 		D41B18211B72AAB70016E0BD /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "CDK Interns/SwiftyJSON.swift"; sourceTree = "<group>"; };
 		D41B18231B72ABB70016E0BD /* SwiftyJSON1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON1.swift; sourceTree = "<group>"; };
+		D41B18251B72C2290016E0BD /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
+		D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundwhiteblurred.jpg; sourceTree = "<group>"; };
+		D41B18291B72C3EF0016E0BD /* AddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddButton.png; sourceTree = "<group>"; };
+		D41B182A1B72C3EF0016E0BD /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		D42E18711B6A9A5100DA2A31 /* DBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
 		D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		D492EC8C1B742FB000339821 /* FAQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		D492EC8E1B744BD400339821 /* Quicksand_Dash.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Quicksand_Dash.otf; path = ../../../../../Downloads/quicksand/Quicksand_Dash.otf; sourceTree = "<group>"; };
+		D492EC8F1B744BD400339821 /* Quicksand-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Bold.otf"; path = "../../../../../Downloads/quicksand/Quicksand-Bold.otf"; sourceTree = "<group>"; };
+		D492EC901B744BD400339821 /* Quicksand-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-BoldItalic.otf"; path = "../../../../../Downloads/quicksand/Quicksand-BoldItalic.otf"; sourceTree = "<group>"; };
+		D492EC911B744BD400339821 /* Quicksand-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Italic.otf"; path = "../../../../../Downloads/quicksand/Quicksand-Italic.otf"; sourceTree = "<group>"; };
+		D492EC921B744BD400339821 /* Quicksand-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Light.otf"; path = "../../../../../Downloads/quicksand/Quicksand-Light.otf"; sourceTree = "<group>"; };
+		D492EC931B744BD400339821 /* Quicksand-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-LightItalic.otf"; path = "../../../../../Downloads/quicksand/Quicksand-LightItalic.otf"; sourceTree = "<group>"; };
+		D492EC941B744BD400339821 /* Quicksand-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Regular.otf"; path = "../../../../../Downloads/quicksand/Quicksand-Regular.otf"; sourceTree = "<group>"; };
+		D492ECA31B744F5100339821 /* Profile-Laughing-Circle-BIG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Profile-Laughing-Circle-BIG.png"; path = "../../../../../Desktop/Profile-Laughing-Circle-BIG.png"; sourceTree = "<group>"; };
+		D492ECA61B74585300339821 /* backgroundwhiteblurred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundwhiteblurred.jpg; path = ../../../../../Desktop/backgroundwhiteblurred.jpg; sourceTree = "<group>"; };
+		D492ECA91B74595400339821 /* add139.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add139.png; path = ../../../../../Downloads/MyIcons/png/add139.png; sourceTree = "<group>"; };
+		D492ECAA1B74595400339821 /* email19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = email19.png; path = ../../../../../Downloads/MyIcons/png/email19.png; sourceTree = "<group>"; };
+		D492ECAB1B74595400339821 /* message30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message30.png; path = ../../../../../Downloads/MyIcons/png/message30.png; sourceTree = "<group>"; };
+		D492ECAC1B74595400339821 /* pin56.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin56.png; path = ../../../../../Downloads/MyIcons/png/pin56.png; sourceTree = "<group>"; };
+		D492ECAD1B74595400339821 /* telephone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = telephone5.png; path = ../../../../../Downloads/MyIcons/png/telephone5.png; sourceTree = "<group>"; };
+		D492ECB81B74625D00339821 /* Meetup-screenshot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Meetup-screenshot.jpeg"; path = "../../../../../Desktop/Meetup-screenshot.jpeg"; sourceTree = "<group>"; };
 		D497A6C81B66DB7900653999 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		D49DB8601B68305D00EC120F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D49DB8621B68306400EC120F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -242,7 +284,6 @@
 			children = (
 				D41B18251B72C2290016E0BD /* Background.jpg */,
 				D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */,
-				D4A060111B6945E8000FEE2B /* ContactsViewController.swift */,
 				D41B18231B72ABB70016E0BD /* SwiftyJSON1.swift */,
 				D41B18151B7155620016E0BD /* testauthors.json */,
 				D41B18161B7155620016E0BD /* testmessages.json */,
@@ -264,6 +305,7 @@
 				D497A6C81B66DB7900653999 /* EditViewController.swift */,
 				D86143BB1B571A1D00965D49 /* ViewController.swift */,
 				D42E18711B6A9A5100DA2A31 /* DBViewController.swift */,
+				D492EC8C1B742FB000339821 /* FAQ.swift */,
 				D86143C01B571A1D00965D49 /* Images.xcassets */,
 				D86143C21B571A1D00965D49 /* LaunchScreen.xib */,
 				D86143B71B571A1D00965D49 /* Supporting Files */,
@@ -275,6 +317,21 @@
 			isa = PBXGroup;
 			children = (
 				D41B18291B72C3EF0016E0BD /* AddButton.png */,
+				D492ECB81B74625D00339821 /* Meetup-screenshot.jpeg */,
+				D492ECA61B74585300339821 /* backgroundwhiteblurred.jpg */,
+				D492ECA91B74595400339821 /* add139.png */,
+				D492ECAA1B74595400339821 /* email19.png */,
+				D492ECAB1B74595400339821 /* message30.png */,
+				D492ECAC1B74595400339821 /* pin56.png */,
+				D492ECAD1B74595400339821 /* telephone5.png */,
+				D492ECA31B744F5100339821 /* Profile-Laughing-Circle-BIG.png */,
+				D492EC8E1B744BD400339821 /* Quicksand_Dash.otf */,
+				D492EC8F1B744BD400339821 /* Quicksand-Bold.otf */,
+				D492EC901B744BD400339821 /* Quicksand-BoldItalic.otf */,
+				D492EC911B744BD400339821 /* Quicksand-Italic.otf */,
+				D492EC921B744BD400339821 /* Quicksand-Light.otf */,
+				D492EC931B744BD400339821 /* Quicksand-LightItalic.otf */,
+				D492EC941B744BD400339821 /* Quicksand-Regular.otf */,
 				D41B182A1B72C3EF0016E0BD /* profile.png */,
 				6EBD33221B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg */,
 				D86143E91B571E8500965D49 /* CDK_Logo_TM_RGB_MinSize.png */,
@@ -383,30 +440,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D492ECA71B74585300339821 /* backgroundwhiteblurred.jpg in Resources */,
 				D86143E61B571DF100965D49 /* LaunchScreen.xib in Resources */,
 				D86143E41B571CC600965D49 /* reveal-icon@2x.png in Resources */,
 				D86143C41B571A1D00965D49 /* LaunchScreen.xib in Resources */,
+				D492ECB01B74595400339821 /* email19.png in Resources */,
+				D492ECB91B74625D00339821 /* Meetup-screenshot.jpeg in Resources */,
 				D41B18171B7155620016E0BD /* testauthors.json in Resources */,
 				D86143E81B571E1500965D49 /* Main.storyboard in Resources */,
+				D492ECA41B744F5100339821 /* Profile-Laughing-Circle-BIG.png in Resources */,
 				6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */,
-
 				D41B182B1B72C3EF0016E0BD /* AddButton.png in Resources */,
-
-
+				D492EC9F1B744BD400339821 /* Quicksand-LightItalic.otf in Resources */,
 				D41B18181B7155620016E0BD /* testmessages.json in Resources */,
-
-				D41B18181B7155620016E0BD /* testevents.json in Resources */,
+				D41B18181B7155620016E0BD /* testmessages.json in Resources */,
 				B10281F41B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision in Resources */,
+				D492EC991B744BD400339821 /* Quicksand-BoldItalic.otf in Resources */,
+				D492ECB21B74595400339821 /* message30.png in Resources */,
 				D86143C11B571A1D00965D49 /* Images.xcassets in Resources */,
 				D41B182C1B72C3EF0016E0BD /* profile.png in Resources */,
 				D41B18281B72C2290016E0BD /* backgroundwhiteblurred.jpg in Resources */,
 				D86143EA1B571E8500965D49 /* CDK_Logo_TM_RGB_MinSize.png in Resources */,
+				D492ECAE1B74595400339821 /* add139.png in Resources */,
 				D86143E31B571CC600965D49 /* reveal-icon.png in Resources */,
-
+				D492EC9D1B744BD400339821 /* Quicksand-Light.otf in Resources */,
+				D492ECB61B74595400339821 /* telephone5.png in Resources */,
+				D492EC951B744BD400339821 /* Quicksand_Dash.otf in Resources */,
 				D41B18271B72C2290016E0BD /* Background.jpg in Resources */,
-
 				54FA16D81B72D31800A64DA1 /* testevents.json in Resources */,
-
+				D492ECB41B74595400339821 /* pin56.png in Resources */,
+				D492EC971B744BD400339821 /* Quicksand-Bold.otf in Resources */,
+				D492ECA11B744BD400339821 /* Quicksand-Regular.otf in Resources */,
+				D492EC9B1B744BD400339821 /* Quicksand-Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +479,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D492EC981B744BD400339821 /* Quicksand-Bold.otf in Resources */,
+				D492ECAF1B74595400339821 /* add139.png in Resources */,
+				D492EC9C1B744BD400339821 /* Quicksand-Italic.otf in Resources */,
+				D492ECB11B74595400339821 /* email19.png in Resources */,
+				D492EC961B744BD400339821 /* Quicksand_Dash.otf in Resources */,
+				D492EC9A1B744BD400339821 /* Quicksand-BoldItalic.otf in Resources */,
+				D492ECA21B744BD400339821 /* Quicksand-Regular.otf in Resources */,
+				D492ECB51B74595400339821 /* pin56.png in Resources */,
+				D492ECBA1B74625D00339821 /* Meetup-screenshot.jpeg in Resources */,
+				D492ECA81B74585300339821 /* backgroundwhiteblurred.jpg in Resources */,
+				D492ECB31B74595400339821 /* message30.png in Resources */,
+				D492ECB71B74595400339821 /* telephone5.png in Resources */,
+				D492ECA51B744F5100339821 /* Profile-Laughing-Circle-BIG.png in Resources */,
+				D492ECA01B744BD400339821 /* Quicksand-LightItalic.otf in Resources */,
+				D492EC9E1B744BD400339821 /* Quicksand-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,10 +505,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D6CD8C1B717C87003B4BCF /* AppDelegate.m in Sources */,
-				D42E18761B6ADDDB00DA2A31 /* DiscussionViewController.swift in Sources */,
 				CFAE57921B72B16300DC75A0 /* Contact.swift in Sources */,
 				D497A6C91B66DB7900653999 /* EditViewController.swift in Sources */,
 				B1D6CD801B717443003B4BCF /* MeetupManager.m in Sources */,
+				D492EC8D1B742FB000339821 /* FAQ.swift in Sources */,
 				D4BE88621B62B6240040E584 /* LoginViewController.swift in Sources */,
 				B1D6CD7A1B717314003B4BCF /* GroupBuilder.m in Sources */,
 				B1D6CD871B717BA1003B4BCF /* DetailCell.m in Sources */,

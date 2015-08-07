@@ -12,11 +12,11 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    var dataManager = DataManager()
+    
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-       
-
+        DataManager.sharedInstance?.updateFromFileAsync()
+        
         /*
 
         DataManager.getInternDataFromFileWithSuccess { (data) -> Void in
@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         */
         
-        dataManager?.getUpdateAsync()
+     
 
 
         

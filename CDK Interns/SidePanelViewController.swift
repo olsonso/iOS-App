@@ -44,7 +44,7 @@ class SidePanelViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   var delegate: SidePanelViewControllerDelegate?
 
-  var items: [String] = ["Home", "Profile", "Calendar", "Discussion", "Contacts", "FAQ", "Settings"]
+    var items: [String] = ["Home", "Profile", "Calendar", "Discussion", "Contacts", "FAQ", "Settings"]
   
   struct TableView {
     struct CellIdentifiers {
