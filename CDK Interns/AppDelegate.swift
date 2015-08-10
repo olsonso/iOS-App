@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 
 @UIApplicationMain
@@ -18,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         DataManager.sharedInstance?.updateFromFileAsync()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("fmdEydqjL3dTUDkeEKppxlPl99T1dfYNgeW77kkJ",
+            clientKey: "WTCAasbg6qkdJFQtWiwujvE0Pdg0fU0YWQwbc3pO")
         
         /*
 

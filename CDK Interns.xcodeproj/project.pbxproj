@@ -34,8 +34,17 @@
 		D41B18271B72C2290016E0BD /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41B18251B72C2290016E0BD /* Background.jpg */; };
 		D41B18281B72C2290016E0BD /* backgroundwhiteblurred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */; };
 		D41B182B1B72C3EF0016E0BD /* AddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D41B18291B72C3EF0016E0BD /* AddButton.png */; };
+		D420FB581B791C3600137AA3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D420FB521B791C3600137AA3 /* Bolts.framework */; };
+		D420FB591B791C3600137AA3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D420FB531B791C3600137AA3 /* Parse.framework */; };
+		D420FB5A1B791C3600137AA3 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D420FB541B791C3600137AA3 /* ParseCrashReporting.framework */; };
+		D420FB5B1B791C3600137AA3 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D420FB551B791C3600137AA3 /* ParseFacebookUtils.framework */; };
+		D420FB5C1B791C3600137AA3 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D420FB561B791C3600137AA3 /* ParseFacebookUtilsV4.framework */; };
+		D420FB5D1B791C3600137AA3 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D420FB571B791C3600137AA3 /* ParseUI.framework */; };
+		D420FB601B791CA400137AA3 /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = D420FB5E1B791CA400137AA3 /* Locksmith.swift */; };
+		D420FB611B791CA400137AA3 /* LocksmithRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D420FB5F1B791CA400137AA3 /* LocksmithRequest.swift */; };
 		D42E18721B6A9A5100DA2A31 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18711B6A9A5100DA2A31 /* DBViewController.swift */; };
 		D42E18741B6ACFE000DA2A31 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */; };
+		D470598B1B79165500DBE83F /* CDK-Global-formerly-ADP.png in Resources */ = {isa = PBXBuildFile; fileRef = D470598A1B79165500DBE83F /* CDK-Global-formerly-ADP.png */; };
 		D492EC8D1B742FB000339821 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = D492EC8C1B742FB000339821 /* FAQ.swift */; };
 		D492EC951B744BD400339821 /* Quicksand_Dash.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC8E1B744BD400339821 /* Quicksand_Dash.otf */; };
 		D492EC961B744BD400339821 /* Quicksand_Dash.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC8E1B744BD400339821 /* Quicksand_Dash.otf */; };
@@ -53,19 +62,6 @@
 		D492ECA21B744BD400339821 /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D492EC941B744BD400339821 /* Quicksand-Regular.otf */; };
 		D492ECA71B74585300339821 /* backgroundwhiteblurred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA61B74585300339821 /* backgroundwhiteblurred.jpg */; };
 		D492ECA81B74585300339821 /* backgroundwhiteblurred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA61B74585300339821 /* backgroundwhiteblurred.jpg */; };
-		D492ECAE1B74595400339821 /* add139.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA91B74595400339821 /* add139.png */; };
-		D492ECAF1B74595400339821 /* add139.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECA91B74595400339821 /* add139.png */; };
-		D492ECB01B74595400339821 /* email19.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAA1B74595400339821 /* email19.png */; };
-		D492ECB11B74595400339821 /* email19.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAA1B74595400339821 /* email19.png */; };
-		D492ECB21B74595400339821 /* message30.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAB1B74595400339821 /* message30.png */; };
-		D492ECB31B74595400339821 /* message30.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAB1B74595400339821 /* message30.png */; };
-		D492ECB41B74595400339821 /* pin56.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAC1B74595400339821 /* pin56.png */; };
-		D492ECB51B74595400339821 /* pin56.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAC1B74595400339821 /* pin56.png */; };
-		D492ECB61B74595400339821 /* telephone5.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAD1B74595400339821 /* telephone5.png */; };
-		D492ECB71B74595400339821 /* telephone5.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECAD1B74595400339821 /* telephone5.png */; };
-		D492ECB91B74625D00339821 /* Meetup-screenshot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D492ECB81B74625D00339821 /* Meetup-screenshot.jpeg */; };
-		D492ECBA1B74625D00339821 /* Meetup-screenshot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D492ECB81B74625D00339821 /* Meetup-screenshot.jpeg */; };
-		D492ECBC1B74FCBB00339821 /* CDK_Logo_Horiz_TM_RGB_300dpi.png in Resources */ = {isa = PBXBuildFile; fileRef = D492ECBB1B74FCBB00339821 /* CDK_Logo_Horiz_TM_RGB_300dpi.png */; };
 		D497A6C91B66DB7900653999 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D497A6C81B66DB7900653999 /* EditViewController.swift */; };
 		D49DB8611B68305D00EC120F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49DB8601B68305D00EC120F /* AudioToolbox.framework */; };
 		D49DB8631B68306400EC120F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49DB8621B68306400EC120F /* CFNetwork.framework */; };
@@ -142,8 +138,18 @@
 		D41B18251B72C2290016E0BD /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundwhiteblurred.jpg; sourceTree = "<group>"; };
 		D41B18291B72C3EF0016E0BD /* AddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddButton.png; sourceTree = "<group>"; };
+		D420FB521B791C3600137AA3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Downloads/parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
+		D420FB531B791C3600137AA3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
+		D420FB541B791C3600137AA3 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../../Downloads/parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		D420FB551B791C3600137AA3 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../../Downloads/parse-library-1.7.5/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		D420FB561B791C3600137AA3 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "../../../../Downloads/parse-library-1.7.5/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
+		D420FB571B791C3600137AA3 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../Downloads/parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
+		D420FB5E1B791CA400137AA3 /* Locksmith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locksmith.swift; sourceTree = "<group>"; };
+		D420FB5F1B791CA400137AA3 /* LocksmithRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithRequest.swift; sourceTree = "<group>"; };
 		D42E18711B6A9A5100DA2A31 /* DBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
 		D42E18731B6ACFE000DA2A31 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		D47059861B79159A00DBE83F /* parse-library-1.7.5 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "parse-library-1.7.5"; path = "../../../../Downloads/parse-library-1.7.5"; sourceTree = "<group>"; };
+		D470598A1B79165500DBE83F /* CDK-Global-formerly-ADP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CDK-Global-formerly-ADP.png"; path = "../../../../../Desktop/CDK-Global-formerly-ADP.png"; sourceTree = "<group>"; };
 		D492EC8C1B742FB000339821 /* FAQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		D492EC8E1B744BD400339821 /* Quicksand_Dash.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Quicksand_Dash.otf; path = ../../../../../Downloads/quicksand/Quicksand_Dash.otf; sourceTree = "<group>"; };
 		D492EC8F1B744BD400339821 /* Quicksand-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Bold.otf"; path = "../../../../../Downloads/quicksand/Quicksand-Bold.otf"; sourceTree = "<group>"; };
@@ -153,13 +159,6 @@
 		D492EC931B744BD400339821 /* Quicksand-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-LightItalic.otf"; path = "../../../../../Downloads/quicksand/Quicksand-LightItalic.otf"; sourceTree = "<group>"; };
 		D492EC941B744BD400339821 /* Quicksand-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Regular.otf"; path = "../../../../../Downloads/quicksand/Quicksand-Regular.otf"; sourceTree = "<group>"; };
 		D492ECA61B74585300339821 /* backgroundwhiteblurred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundwhiteblurred.jpg; path = ../../../../../Desktop/backgroundwhiteblurred.jpg; sourceTree = "<group>"; };
-		D492ECA91B74595400339821 /* add139.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add139.png; path = ../../../../../Downloads/MyIcons/png/add139.png; sourceTree = "<group>"; };
-		D492ECAA1B74595400339821 /* email19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = email19.png; path = ../../../../../Downloads/MyIcons/png/email19.png; sourceTree = "<group>"; };
-		D492ECAB1B74595400339821 /* message30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message30.png; path = ../../../../../Downloads/MyIcons/png/message30.png; sourceTree = "<group>"; };
-		D492ECAC1B74595400339821 /* pin56.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin56.png; path = ../../../../../Downloads/MyIcons/png/pin56.png; sourceTree = "<group>"; };
-		D492ECAD1B74595400339821 /* telephone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = telephone5.png; path = ../../../../../Downloads/MyIcons/png/telephone5.png; sourceTree = "<group>"; };
-		D492ECB81B74625D00339821 /* Meetup-screenshot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Meetup-screenshot.jpeg"; path = "../../../../../Desktop/Meetup-screenshot.jpeg"; sourceTree = "<group>"; };
-		D492ECBB1B74FCBB00339821 /* CDK_Logo_Horiz_TM_RGB_300dpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CDK_Logo_Horiz_TM_RGB_300dpi.png; path = ../../../../../Desktop/CDK_Logo_Horiz_TM_RGB_300dpi.png; sourceTree = "<group>"; };
 		D497A6C81B66DB7900653999 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		D49DB8601B68305D00EC120F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D49DB8621B68306400EC120F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -197,6 +196,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D420FB581B791C3600137AA3 /* Bolts.framework in Frameworks */,
+				D420FB591B791C3600137AA3 /* Parse.framework in Frameworks */,
+				D420FB5A1B791C3600137AA3 /* ParseCrashReporting.framework in Frameworks */,
+				D420FB5B1B791C3600137AA3 /* ParseFacebookUtils.framework in Frameworks */,
+				D420FB5C1B791C3600137AA3 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				D420FB5D1B791C3600137AA3 /* ParseUI.framework in Frameworks */,
 				D41B18221B72AAB70016E0BD /* SwiftyJSON.swift in Frameworks */,
 				B10281F61B741FC0000CCD42 /* LoopBack.framework in Frameworks */,
 				D49DB8731B6830D100EC120F /* CoreLocation.framework in Frameworks */,
@@ -248,6 +253,15 @@
 		D86143AB1B571A1D00965D49 = {
 			isa = PBXGroup;
 			children = (
+				D420FB5E1B791CA400137AA3 /* Locksmith.swift */,
+				D420FB5F1B791CA400137AA3 /* LocksmithRequest.swift */,
+				D420FB521B791C3600137AA3 /* Bolts.framework */,
+				D420FB531B791C3600137AA3 /* Parse.framework */,
+				D420FB541B791C3600137AA3 /* ParseCrashReporting.framework */,
+				D420FB551B791C3600137AA3 /* ParseFacebookUtils.framework */,
+				D420FB561B791C3600137AA3 /* ParseFacebookUtilsV4.framework */,
+				D420FB571B791C3600137AA3 /* ParseUI.framework */,
+				D47059861B79159A00DBE83F /* parse-library-1.7.5 */,
 				B10281F71B742046000CCD42 /* LoopBack.h */,
 				B1D6CD841B717AB9003B4BCF /* meetup */,
 				CFAE57911B72B16300DC75A0 /* Contact.swift */,
@@ -319,15 +333,9 @@
 		D86143B71B571A1D00965D49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D492ECBB1B74FCBB00339821 /* CDK_Logo_Horiz_TM_RGB_300dpi.png */,
+				D470598A1B79165500DBE83F /* CDK-Global-formerly-ADP.png */,
 				D41B18291B72C3EF0016E0BD /* AddButton.png */,
-				D492ECB81B74625D00339821 /* Meetup-screenshot.jpeg */,
 				D492ECA61B74585300339821 /* backgroundwhiteblurred.jpg */,
-				D492ECA91B74595400339821 /* add139.png */,
-				D492ECAA1B74595400339821 /* email19.png */,
-				D492ECAB1B74595400339821 /* message30.png */,
-				D492ECAC1B74595400339821 /* pin56.png */,
-				D492ECAD1B74595400339821 /* telephone5.png */,
 				D492EC8E1B744BD400339821 /* Quicksand_Dash.otf */,
 				D492EC8F1B744BD400339821 /* Quicksand-Bold.otf */,
 				D492EC901B744BD400339821 /* Quicksand-BoldItalic.otf */,
@@ -446,9 +454,8 @@
 				D86143E61B571DF100965D49 /* LaunchScreen.xib in Resources */,
 				D86143E41B571CC600965D49 /* reveal-icon@2x.png in Resources */,
 				D86143C41B571A1D00965D49 /* LaunchScreen.xib in Resources */,
-				D492ECB01B74595400339821 /* email19.png in Resources */,
-				D492ECB91B74625D00339821 /* Meetup-screenshot.jpeg in Resources */,
 				D41B18171B7155620016E0BD /* testauthors.json in Resources */,
+				D470598B1B79165500DBE83F /* CDK-Global-formerly-ADP.png in Resources */,
 				D86143E81B571E1500965D49 /* Main.storyboard in Resources */,
 				6EBD33231B6BCA7300A82CB3 /* fdaa9272af90a3d76768e45e9fffe9a93519d59e.jpg in Resources */,
 				D41B18181B7155620016E0BD /* testmessages.json in Resources */,
@@ -459,19 +466,14 @@
 				D41B18181B7155620016E0BD /* testmessages.json in Resources */,
 				B10281F41B72E765000CCD42 /* CDK_Intern_app_Development.mobileprovision in Resources */,
 				D492EC991B744BD400339821 /* Quicksand-BoldItalic.otf in Resources */,
-				D492ECB21B74595400339821 /* message30.png in Resources */,
 				D86143C11B571A1D00965D49 /* Images.xcassets in Resources */,
 				D41B18281B72C2290016E0BD /* backgroundwhiteblurred.jpg in Resources */,
 				D86143EA1B571E8500965D49 /* CDK_Logo_TM_RGB_MinSize.png in Resources */,
-				D492ECAE1B74595400339821 /* add139.png in Resources */,
-				D492ECBC1B74FCBB00339821 /* CDK_Logo_Horiz_TM_RGB_300dpi.png in Resources */,
 				D86143E31B571CC600965D49 /* reveal-icon.png in Resources */,
 				D492EC9D1B744BD400339821 /* Quicksand-Light.otf in Resources */,
-				D492ECB61B74595400339821 /* telephone5.png in Resources */,
 				D492EC951B744BD400339821 /* Quicksand_Dash.otf in Resources */,
 				D41B18271B72C2290016E0BD /* Background.jpg in Resources */,
 				54FA16D81B72D31800A64DA1 /* testevents.json in Resources */,
-				D492ECB41B74595400339821 /* pin56.png in Resources */,
 				D492EC971B744BD400339821 /* Quicksand-Bold.otf in Resources */,
 				D492ECA11B744BD400339821 /* Quicksand-Regular.otf in Resources */,
 				D492EC9B1B744BD400339821 /* Quicksand-Italic.otf in Resources */,
@@ -483,17 +485,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D492EC981B744BD400339821 /* Quicksand-Bold.otf in Resources */,
-				D492ECAF1B74595400339821 /* add139.png in Resources */,
 				D492EC9C1B744BD400339821 /* Quicksand-Italic.otf in Resources */,
-				D492ECB11B74595400339821 /* email19.png in Resources */,
 				D492EC961B744BD400339821 /* Quicksand_Dash.otf in Resources */,
 				D492EC9A1B744BD400339821 /* Quicksand-BoldItalic.otf in Resources */,
 				D492ECA21B744BD400339821 /* Quicksand-Regular.otf in Resources */,
-				D492ECB51B74595400339821 /* pin56.png in Resources */,
-				D492ECBA1B74625D00339821 /* Meetup-screenshot.jpeg in Resources */,
 				D492ECA81B74585300339821 /* backgroundwhiteblurred.jpg in Resources */,
-				D492ECB31B74595400339821 /* message30.png in Resources */,
-				D492ECB71B74595400339821 /* telephone5.png in Resources */,
 				D492ECA01B744BD400339821 /* Quicksand-LightItalic.otf in Resources */,
 				D492EC9E1B744BD400339821 /* Quicksand-Light.otf in Resources */,
 			);
@@ -507,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D6CD8C1B717C87003B4BCF /* AppDelegate.m in Sources */,
+				D420FB601B791CA400137AA3 /* Locksmith.swift in Sources */,
 				CFAE57921B72B16300DC75A0 /* Contact.swift in Sources */,
 				D497A6C91B66DB7900653999 /* EditViewController.swift in Sources */,
 				B1D6CD801B717443003B4BCF /* MeetupManager.m in Sources */,
@@ -527,6 +524,7 @@
 				B17438EC1B716CD600C8D941 /* MeetupCommunicator.m in Sources */,
 				B1D6CD831B71796F003B4BCF /* MasterViewController.m in Sources */,
 				D86143DE1B571C6E00965D49 /* SidePanelViewController.swift in Sources */,
+				D420FB611B791CA400137AA3 /* LocksmithRequest.swift in Sources */,
 				D86143DD1B571C6E00965D49 /* ContainerViewController.swift in Sources */,
 				CFAE57841B71629C00DC75A0 /* AppModel.swift in Sources */,
 				6E65D9C41B6AE6E200D4388F /* Contacts2ViewController.swift in Sources */,
@@ -647,6 +645,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "76868518-eff8-442a-a47b-bb068b91a2fc";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -671,8 +670,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "CDK Interns-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -693,7 +693,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "CDK Interns-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

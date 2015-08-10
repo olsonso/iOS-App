@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Parse
 
 
 @objc
@@ -26,6 +27,11 @@ class CenterViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var object = PFUser(className: "TestClass")
+        object.addObject("Banana", forKey: "favoriteFood")
+        object.addObject("Chocolate", forKey: "favoriteIceCream")
+        object.saveInBackground()
     }
    
     
