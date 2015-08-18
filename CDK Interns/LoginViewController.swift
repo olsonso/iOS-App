@@ -14,43 +14,78 @@ import Parse
 class LoginViewController : UIViewController {
     
     @IBOutlet weak var Username: UITextField!
-    
     @IBOutlet weak var Password: UITextField!
-    
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
-    @IBOutlet weak var loginInitialLabel: UILabel!
-    
+    var activity: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0, 150, 150)) as UIActivityIndicatorView
     var loginViewController: LoginViewController!
     
-   
+    
+    func presentHomePage() {
+        //create function to log in
+        presentViewController(ContainerViewController(), animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    //    addSubview(LoginViewController)
-        
-}
+        self.activity.center = self.view.center
+        self.activity.hidesWhenStopped = true
+        self.activity.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        view.addSubview(self.activity)
+    }
+    
+    
     @IBAction func loginTouch(sender: AnyObject) {
+        let userName = self.Username.text
+        let userPassword = self.Password.text
+    
+        
+        if (((count(userName.utf16) < 4 ) || (count(userPassword.utf16)) < 5)){
+            var alert = UIAlertView(title: "Invalid", message: "Username must be 4 characters long", delegate: self, cancelButtonTitle: "Okay")
+            alert.show()
+        }
+            else{
+                self.activity.startAnimating()
+            }
+      
+        var username = self.Username.text
+        var password = self.Password.text
         
         if Username.text != "" && Password.text != "" {
             // Not Empty, Do something.
+
         } else {
             // Empty, Notify user
-            self.loginInitialLabel.text = "All Fields Required"
+             var displayAlert = UIAlertController(title: "Alert", message: "All Fields are Required!", preferredStyle: UIAlertControllerStyle.Alert)
+        
         }
         
-        PFUser.logInWithUsernameInBackground(Username.text, password:Password.text) {
-            (user: PFUser!, error: NSError!) -> Void in
-            if user != nil {
+       
+        PFUser.logInWithUsernameInBackground(userName, password:password) {
+            (user, error) -> Void in
+            
+            self.activity.stopAnimating()
+            
+            if (user != nil ){
                 // Yes, User Exists
-                self.loginInitialLabel.text = "User Exists"
+               var alert = UIAlertView(title: "Success!", message: "You have logged In", delegate: self, cancelButtonTitle: "Okay")
+                alert.show()
+                self.presentHomePage()
+                //self.dismissViewControllerAnimated(true, completion: nil)
+               // presentViewController(ContainerViewController(), animated: true, completion: nil)
+                
+                
             } else {
                 // No, User Doesn't Exist
+                 var displayAlert = UIAlertView(title: "Alert", message: "\(error)", delegate: self, cancelButtonTitle: "Okay")
+                    displayAlert.show()
+                
             }
         }
         
-        let containerViewController = ContainerViewController()
-        presentViewController(containerViewController, animated: true, completion: nil)
     }
-}
+    
+
+
+    }

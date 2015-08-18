@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 
 protocol SidePanelViewControllerDelegate {
@@ -21,11 +22,11 @@ enum MenuItem: Int {
     case Contacts
     case FAQ
     case Settings
+    case Logout
     
     func viewController() -> UIViewController {
         switch (self) {
         case Home:
-            println("were here")
             return UIStoryboard.centerViewController()!
         case Profile: return UIStoryboard.profileViewController()!
         case Calendar: return UIStoryboard.calendarViewController()!
@@ -33,9 +34,17 @@ enum MenuItem: Int {
         case Contacts: return UIStoryboard.contacts2ViewController()!
         case FAQ: return UIStoryboard.faqViewController()!
         case Settings: return UIStoryboard.settingsViewController()!
+        case Logout: logout()
+            return UIStoryboard.loginViewController()!
+    
         default: return UIStoryboard.centerViewController()!
         }
     }
+}
+
+func logout(){
+    PFUser.logOut()
+    
 }
 
 
@@ -44,7 +53,7 @@ class SidePanelViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   var delegate: SidePanelViewControllerDelegate?
 
-    var items: [String] = ["Home", "Profile", "Calendar", "Discussion", "Contacts", "FAQ", "Settings"]
+    var items: [String] = ["Home", "Profile", "Calendar", "Discussion", "Contacts", "FAQ", "Settings", "Logout"]
   
   struct TableView {
     struct CellIdentifiers {
@@ -87,7 +96,7 @@ extension SidePanelViewController: UITableViewDataSource {
 extension SidePanelViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 8
     }
 
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

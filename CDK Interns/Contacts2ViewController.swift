@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Parse
 
 @objc
 protocol Contacts2ViewControllerDelegate {
@@ -17,50 +18,67 @@ protocol Contacts2ViewControllerDelegate {
 }
 
 
-class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class Contacts2ViewController: PFQueryTableViewController{
     
-    @IBOutlet weak var mainContainer: UIView!
-    @IBOutlet weak var tableView: UITableView!
+  
     
     var delegate: Contacts2ViewControllerDelegate?
     var currentVC : UIViewController?
-    //let keyArray = interns.keys
-    let dataSourceArray = ["Ariel", "Belle", "Cinderella", "Donald Duck", "Dory", "Figaro", "Genie", "Goofy", "Jasmine", "Jagar", "Lightning McQueen", "Mickey Mouse", "Mike", "Minnie Mouse", "Mulan", "Pocahontas", "Pluto", "Rafiki", "Rapunzel", "Sharkface", "Snow White",  "Sulley", "Tiana", "WALL-E"]
-    
+    //var tableVC: Contacts2ViewController = Contacts2ViewController(className: "Contacts")
+   
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-        
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1 // This was put in mainly for my own unit testing
+    
+    
+    override init(style: UITableViewStyle, className: String!){
+        super.init(style: style, className: className)
+    
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //print("Count: \(DataManager.sharedInstance!.getContacts().count)")
-        //return DataManager.sharedInstance!.getContacts().count
-        return dataSourceArray.count
-        // Most of the time my data source is an array of something...  will replace with the actual name of the data source
+    required init(coder aDecoder: NSCoder){
+        super.init(coder: aDecoder)
+        self.parseClassName = "Contacts"
+        self.textKey = "Name"
+        self.pullToRefreshEnabled = true
+        self.paginationEnabled = false
+        self.objectsPerPage = 15
+        
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // Note:  Be sure to replace the argument to dequeueReusableCellWithIdentifier with the actual identifier string!
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
-        //cell.textLabel?.text = "hi"
-        cell.textLabel?.text = dataSourceArray[indexPath.row]
-        //var intern = DataManager.sharedInstance!.getContacts()[indexPath.row]
-        //cell.textLabel?.text = intern.FirstName
+    override func queryForTable() -> PFQuery {
+        var query:PFQuery = PFQuery(className: self.parseClassName!)
         
-        // set cell's textLabel.text property 
-        // set cell's detailTextLabel.text property
+        if(objects?.count == 0){
+         //   query.cachePolicy = PFCachePolicy.CacheThenNetwork
+            println("empty!")
+        }
+        
+        query.orderByAscending("name")
+        return query
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+        
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! PFTableViewCell!
+        if cell == nil {
+            cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        }
+        
+        // Extract values from the PFObject to display in the table cell
+        if let nameEnglish = object?["Name"] as? String {
+            cell?.textLabel?.text = nameEnglish
+        }
+        if let capital = object?["School"] as? String {
+            cell?.detailTextLabel?.text = capital
+        }
+        if let date = object?["date"] as? String {
+            cell?.detailTextLabel?.text = date
+        }
         return cell
+    }
+    
 
-    
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedContacts = DataManager.sharedInstance!.getContacts()
-        
-    }
     
     // MARK: Button actions
     
@@ -71,17 +89,20 @@ class Contacts2ViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if let profileVC = segue.destinationViewController as? ProfileViewController{
-            currentVC = profileVC
-        }
+        // Get the new view controller using [segue destinationViewController].
+        var detailScene = segue.destinationViewController as! DetailViewController
         
+        // Pass the selected object to the destination view controller.
+        if let indexPath = self.tableView.indexPathForSelectedRow() {
+            let row = Int(indexPath.row)
+            detailScene.currentObject = (objects?[row] as! PFObject)
+        }
     }
+}
+    
+    
     
 
-    
-    
-    
-}
 
 
 

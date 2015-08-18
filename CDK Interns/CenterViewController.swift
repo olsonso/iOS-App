@@ -17,55 +17,70 @@ protocol CenterViewControllerDelegate {
     optional func collapseSidePanels()
 }
 
-class CenterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+class CenterViewController: PFQueryTableViewController {
   
     @IBOutlet weak var mainContainer: UIView!
-    @IBOutlet weak var tableView: UITableView!
 
-  var delegate: CenterViewControllerDelegate?
+
+    var delegate: CenterViewControllerDelegate?
     var currentVC : UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var object = PFUser(className: "TestClass")
-        object.addObject("Banana", forKey: "favoriteFood")
-        object.addObject("Chocolate", forKey: "favoriteIceCream")
-        object.saveInBackground()
-    }
-   
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        println("sections")
-        return 1 // This was put in mainly for my own unit testing
-    }
-
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Count: \(DataManager.sharedInstance!.getMessages().count)")
-        return DataManager.sharedInstance!.getMessages().count
-        // Most of the time my data source is an array of something...  will replace with the actual name of the data source
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // Note:  Be sure to replace the argument to dequeueReusableCellWithIdentifier with the actual identifier string!
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
-        //cell.textLabel?.text = "hi"
-        //cell.textLabel?.text = dataSourceArray[indexPath.row]
-        var message = DataManager.sharedInstance!.getMessages()[indexPath.row]
-        println(message.Body)
-        cell.textLabel?.text = ("\(message.AuthorId) \(message.Body)")
+    
+    override init(style: UITableViewStyle, className: String!){
+        super.init(style: style, className: className)
         
-        // set cell's textLabel.text property
-        // set cell's detailTextLabel.text property
+    }
+    
+    required init(coder aDecoder: NSCoder){
+        super.init(coder: aDecoder)
+        self.parseClassName = "Events"
+        self.textKey = "Event"
+        self.pullToRefreshEnabled = true
+        self.paginationEnabled = false
+        self.objectsPerPage = 5
+        
+    }
+    
+    override func queryForTable() -> PFQuery {
+        var query:PFQuery = PFQuery(className: self.parseClassName!)
+        
+        if(objects?.count == 0){
+            //   query.cachePolicy = PFCachePolicy.CacheThenNetwork
+            println("empty!")
+        }
+        
+        query.orderByAscending("Date")
+        return query
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+        
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! PFTableViewCell!
+        if cell == nil {
+            cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        }
+        
+        
+        
+        // Extract values from the PFObject to display in the table cell
+        if let event = object?["Event"] as? String {
+            cell?.textLabel?.text = event
+        }
+        if let userName = object?["date"] as? String {
+            cell?.detailTextLabel?.text = userName
+        }
+        
+        if let date = object?["User"] as? String {
+            cell?.detailTextLabel?.text = date
+        }
+        
         return cell
-        
-        
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedContacts = DataManager.sharedInstance!.getMessages()
-        
-    }
 
   
   // MARK: Button actions
@@ -73,7 +88,7 @@ class CenterViewController: UIViewController, UITableViewDataSource, UITableView
   @IBAction func kittiesTapped(sender: AnyObject) {
     delegate?.toggleLeftPanel?()
   }
-  
+
 
 override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
@@ -82,8 +97,6 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
        }
         
     }
-
-
 
 }
 

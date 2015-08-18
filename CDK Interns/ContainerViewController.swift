@@ -20,11 +20,11 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, S
   var centerNavigationController: UINavigationController!
   var centerViewController: CenterViewController!
   var calendarViewController: CalendarViewController!
- 
   var contacts2ViewController: Contacts2ViewController!
   var faqViewController: FAQViewController!
   var settingsViewController: SettingsViewController!
   var profileViewController: ProfileViewController!
+    var loginViewController: LoginViewController!
   
   var currentState: SlideOutState = .BothCollapsed {
     didSet {
@@ -269,5 +269,10 @@ extension ContainerViewController: UIGestureRecognizerDelegate {
   class func profileViewController() -> ProfileViewController? {
     return mainStoryboard().instantiateViewControllerWithIdentifier("ProfileViewController") as? ProfileViewController
     }
-  
+    class func loginViewController() -> LoginViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("loginViewController") as? LoginViewController
     }
+    
+   
+  
+}

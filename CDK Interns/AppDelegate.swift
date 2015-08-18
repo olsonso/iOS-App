@@ -14,12 +14,15 @@ import Bolts
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    
-        var dataManager = DataManager()
+    var dataManager = DataManager()
     var dUserInfo: [NSObject : AnyObject]?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        DataManager.sharedInstance?.updateFromFileAsync()
+        
+        
+        //DataManager.sharedInstance?.updateFromFileAsync()
+        
+        Parse.enableLocalDatastore()
         
         // Initialize Parse.
         Parse.setApplicationId("fmdEydqjL3dTUDkeEKppxlPl99T1dfYNgeW77kkJ",
@@ -74,7 +77,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         */
         
      
-
+///push notifications
+        /*
 
         
         let types = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound | UIUserNotificationType.Badge, categories: nil)
@@ -94,7 +98,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UIApplication.sharedApplication().registerForRemoteNotifications()
         
         return true
-
+    */
+    return true
+    
     }
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
