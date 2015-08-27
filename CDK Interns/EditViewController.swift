@@ -10,18 +10,43 @@ import Foundation
 import UIKit
 
 
-class EditViewController: UIViewController {
+class EditViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,  UITextFieldDelegate {
     
-    @IBOutlet weak var profilePictureImageView: UIImageView!
+
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var locationTextfield: UITextField!
     @IBOutlet weak var collegeTextfield: UITextField!
     @IBOutlet weak var funfactTextfield: UITextField!
     @IBOutlet weak var nameTextfield: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    let imagePicker = UIImagePickerController()
+    
+    @IBAction func addImageTapped(sender: AnyObject) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .PhotoLibrary
+        
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imageView.contentMode = .ScaleAspectFit
+            imageView.image = pickedImage
+        }
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker.delegate = self
         
     
     
@@ -35,8 +60,7 @@ class EditViewController: UIViewController {
     
    
     
-    @IBAction func chooseProfileButtonTapped(sender: AnyObject) {
-    }
+
     
     @IBAction func saveButtonTapped(sender: AnyObject) {
     }

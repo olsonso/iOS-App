@@ -112,7 +112,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		54FA16D71B72D31800A64DA1 /* testevents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testevents.json; sourceTree = "<group>"; };
+		54FA16D71B72D31800A64DA1 /* testevents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testevents.json; path = "CDK Interns/testevents.json"; sourceTree = "<group>"; };
 		54FA16D91B7326AE00A64DA1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		6E65D9C31B6AE6E200D4388F /* Contacts2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts2ViewController.swift; sourceTree = "<group>"; };
 		6E65D9C51B6AE97C00D4388F /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
@@ -142,9 +142,9 @@
 		CFAE57831B71629C00DC75A0 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		CFAE57911B72B16300DC75A0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		CFAE57931B72B19E00DC75A0 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		D41B18151B7155620016E0BD /* testauthors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testauthors.json; sourceTree = "<group>"; };
-		D41B18161B7155620016E0BD /* testmessages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testmessages.json; sourceTree = "<group>"; };
-		D41B18211B72AAB70016E0BD /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "CDK Interns/SwiftyJSON.swift"; sourceTree = "<group>"; };
+		D41B18151B7155620016E0BD /* testauthors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testauthors.json; path = "CDK Interns/testauthors.json"; sourceTree = "<group>"; };
+		D41B18161B7155620016E0BD /* testmessages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testmessages.json; path = "CDK Interns/testmessages.json"; sourceTree = "<group>"; };
+		D41B18211B72AAB70016E0BD /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D41B18231B72ABB70016E0BD /* SwiftyJSON1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON1.swift; sourceTree = "<group>"; };
 		D41B18251B72C2290016E0BD /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundwhiteblurred.jpg; sourceTree = "<group>"; };
@@ -274,10 +274,12 @@
 		D4CC0A701B7A6AF800A81CCF /* Json */ = {
 			isa = PBXGroup;
 			children = (
+				D41B18151B7155620016E0BD /* testauthors.json */,
+				D41B18161B7155620016E0BD /* testmessages.json */,
+				54FA16D71B72D31800A64DA1 /* testevents.json */,
 				54FA16D91B7326AE00A64DA1 /* Event.swift */,
 				CFAE57931B72B19E00DC75A0 /* Message.swift */,
 				CFAE57911B72B16300DC75A0 /* Contact.swift */,
-				D41B18211B72AAB70016E0BD /* SwiftyJSON.swift */,
 			);
 			name = Json;
 			sourceTree = "<group>";
@@ -326,13 +328,9 @@
 		D86143B61B571A1D00965D49 /* CDK Interns */ = {
 			isa = PBXGroup;
 			children = (
+				D41B18211B72AAB70016E0BD /* SwiftyJSON.swift */,
 				B17438E61B71681400C8D941 /* CDK Interns-Bridging-Header.h */,
-				D41B18251B72C2290016E0BD /* Background.jpg */,
-				D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */,
 				D41B18231B72ABB70016E0BD /* SwiftyJSON1.swift */,
-				D41B18151B7155620016E0BD /* testauthors.json */,
-				D41B18161B7155620016E0BD /* testmessages.json */,
-				54FA16D71B72D31800A64DA1 /* testevents.json */,
 				D426008A1B7BF36E00335CD9 /* DetailViewController.swift */,
 				D420FB621B79493800137AA3 /* RegisterViewController.swift */,
 				D426008C1B7C03E200335CD9 /* Main.storyboard */,
@@ -355,7 +353,6 @@
 				D86143BB1B571A1D00965D49 /* ViewController.swift */,
 				D42E18711B6A9A5100DA2A31 /* DBViewController.swift */,
 				D492EC8C1B742FB000339821 /* FAQ.swift */,
-				D86143C01B571A1D00965D49 /* Images.xcassets */,
 				D86143C21B571A1D00965D49 /* LaunchScreen.xib */,
 				D86143B71B571A1D00965D49 /* Supporting Files */,
 			);
@@ -365,6 +362,9 @@
 		D86143B71B571A1D00965D49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D86143C01B571A1D00965D49 /* Images.xcassets */,
+				D41B18251B72C2290016E0BD /* Background.jpg */,
+				D41B18261B72C2290016E0BD /* backgroundwhiteblurred.jpg */,
 				D42600B01B82AE9400335CD9 /* add139.png */,
 				D42600B11B82AE9400335CD9 /* email19.png */,
 				D42600B21B82AE9400335CD9 /* message30.png */,

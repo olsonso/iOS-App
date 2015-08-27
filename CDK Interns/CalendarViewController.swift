@@ -109,7 +109,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
         cell.textLabel?.text = self.city[indexPath.row]
-        //cell.detailTextLabel?.text = self.
+        cell.detailTextLabel?.text = self.country[indexPath.row]
         return cell
     }
 

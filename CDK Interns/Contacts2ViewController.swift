@@ -24,7 +24,7 @@ class Contacts2ViewController: PFQueryTableViewController{
     
     var delegate: Contacts2ViewControllerDelegate?
     var currentVC : UIViewController?
-    //var tableVC: Contacts2ViewController = Contacts2ViewController(className: "Contacts")
+    
    
     override func viewDidLoad() {
         super.viewDidLoad()

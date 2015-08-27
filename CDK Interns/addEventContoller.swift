@@ -35,6 +35,7 @@ class addEventContoller: UIViewController{
         if event.text.isEmpty != true{
             newPost["Event"] = event.text
             newPost["date"] = date.text
+            let user = PFUser.currentUser()
             newPost.saveInBackground()
         }
         else{
